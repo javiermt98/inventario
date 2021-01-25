@@ -1,0 +1,3 @@
+C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.Android\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
+C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.Android\obj\Debug\90\build.props
+C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.Android\obj\Debug\90\adb.props

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_Inventario_JavierMT.View.PaginaPrincipal_V"
+             BackgroundColor="AliceBlue"
+             Title="Página Principal">
+
+    <StackLayout>
+    <Label Text="APLICACIÓN DE INVENTARIO" FontSize="Title" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" TextColor="Black"/>
+  
+    <Grid Padding="30" Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+            <Button Text="Aulas" ContentLayout="Bottom, 0" Grid.Column="0" Grid.Row="0" WidthRequest="200" HeightRequest="200" Clicked="Aulas" ImageSource="{OnPlatform UWP='Assets/room.png', Android='room.png'}"  HorizontalOptions="CenterAndExpand" />
+            <Button Text="Dispositivos" ContentLayout="Bottom, 0" Grid.Column="0" Grid.Row="1" WidthRequest="200" HeightRequest="200" Clicked="Dispositivos" ImageSource="{OnPlatform UWP='Assets/carpeta.png', Android='carpeta.png'}"  HorizontalOptions="CenterAndExpand" />
+        
+        </Grid>
+    </StackLayout>
+</ContentPage>
