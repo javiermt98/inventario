@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_Inventario_JavierMT.View.AulaDetalle_V"
+             BackgroundColor="AliceBlue">
+
+    <!--Built in Cells-->
+
+    <StackLayout Margin="20" Padding="15">
+        <Label Text="Código"/>
+        <Entry Placeholder="Código del aula" Margin="0,0,0,15" x:Name="codigo" />
+        <Label Text="Nombre" />
+        <Entry Placeholder="Nombre del aula"  Margin="0,0,0,15" x:Name="nombre" />
+        <Label Text="Abreviatura" />
+        <Entry Placeholder="Abreviatura del aula"  Margin="0,0,0,15" x:Name="abrev"/>
+        <Label Text="Nivel" />
+        <Entry Placeholder="Nivel donde se encuentra el aula"  Margin="0,0,0,15" x:Name="lvl"/>
+        <Button Text="Guardar Aula" Clicked="Guardar" Margin="20" Padding="5" BackgroundColor="Blue" TextColor="White"/>
+    </StackLayout> 
+    
+
+</ContentPage>

@@ -18,6 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="View\AulaDetalle_V.xaml.cs">
+      <DependentUpon>AulaDetalle_V.xaml</DependentUpon>
+    </Compile>
     <Compile Update="View\ListaDispositivos_V.xaml.cs">
       <DependentUpon>ListaDispositivos_V.xaml</DependentUpon>
     </Compile>
@@ -28,6 +31,9 @@
 
   <ItemGroup>
     <EmbeddedResource Update="View\ListaAulas_V.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\AulaDetalle_V.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\ListaDispositivos_V.xaml">

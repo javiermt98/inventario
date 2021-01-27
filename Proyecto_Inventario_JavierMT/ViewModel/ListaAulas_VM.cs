@@ -11,8 +11,6 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
     public class ListaAulas_VM : NotifyPropertyBase
     {
         public Aula_M AulaSeleccionada { get; set; }
-        private bool _botonborrar { get; set; } = false;
-        public bool botonborrar { get{ return _botonborrar; } set{ _botonborrar = value; OnPropertyChanged(); } }
 
         private ObservableCollection<Aula_M> _aulaslist { get; set; }
         public ObservableCollection<Aula_M> aulaslist { get { return _aulaslist; } set { _aulaslist = value; OnPropertyChanged(); } }
@@ -22,24 +20,36 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
             Task<List<Aula_M>> TaskAulas = Provider.daoAulas.AllAulasAsync();
             aulaslist = new ObservableCollection<Aula_M>(TaskAulas.Result);
         }
-        public void AddVM()
+
+         
+        public bool ComprobarAula(Aula_M aula)
         {
-            
-            aulaslist.Insert(0, new Aula_M());
+            bool existe = true;
+            foreach(Aula_M a in aulaslist){
+                if (a.codigo.Equals(aula.codigo))
+                {
+                    existe = false;
+                }
+            }
+
+            return existe;
+           
+
+        }
+
+        public void AddVM(Aula_M aula) {
+            aulaslist.Insert(0, aula);
+            Provider.daoAulas.Insert(aula);
             OnPropertyChanged("aulaslist");
         }
         public void BorrarVM() {
 
             //Provider.daoAulas.Borrar(AulaSeleccionada);
             aulaslist.Remove(AulaSeleccionada);
+            Provider.daoAulas.Borrar(AulaSeleccionada);
             OnPropertyChanged("aulaslist");
         }
 
-        internal void CambiaBoton()
-        {
-            botonborrar = !botonborrar;
-            
-            OnPropertyChanged("botonborrar");
-        }
+
     }
 }

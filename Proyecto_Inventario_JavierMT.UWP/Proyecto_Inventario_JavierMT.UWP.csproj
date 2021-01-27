@@ -105,6 +105,7 @@
   <ItemGroup>
     <Content Include="Assets\borrar.png" />
     <Content Include="Assets\carpeta.png" />
+    <Content Include="Assets\edit.png" />
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-200.png" />
     <Content Include="Assets\LargeTile.scale-400.png" />

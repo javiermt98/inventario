@@ -6,13 +6,14 @@ using SQLite;
 namespace Proyecto_Inventario_JavierMT.Model
 {
     [Table("Impresora")]
-    public class Impresora_M
+    public class Impresora_M : Dispositivos_I
     {
         [PrimaryKey, AutoIncrement]
         public int id_dispositivo { get; set; }
         public int num_factura { get; set; }
         public DateTime fecha_compra { get; set; }
         public string descripcion { get; set; }
+        public string codigoaula { get; set; }
         private string tipo { get; set; }
         private bool escaner { get; set; }
         private bool color { get; set; }

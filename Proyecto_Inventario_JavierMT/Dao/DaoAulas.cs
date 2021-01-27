@@ -34,6 +34,11 @@ namespace Proyecto_Inventario_JavierMT.Dao
             }
         }
 
+        internal Task<List<Aula_M>> DispositivosPorClase(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public int Borrar(Aula_M aula)
         {
             return this.connection.DeleteAsync(aula).Result;

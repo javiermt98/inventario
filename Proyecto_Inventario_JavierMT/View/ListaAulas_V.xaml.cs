@@ -15,6 +15,8 @@ namespace Proyecto_Inventario_JavierMT.View
     public partial class ListaAulas_V : ContentPage
     {
         private ListaAulas_VM vm;
+        private Aula_M aulaanterior;
+        
         public ListaAulas_V()
         {
             
@@ -29,10 +31,19 @@ namespace Proyecto_Inventario_JavierMT.View
         {
             if (e.Item == null)
                 return;
-            Aula_M aulaseleccionada = (Aula_M)e.Item;
-            aulaseleccionada = vm.AulaSeleccionada;
 
-            
+            if(aulaanterior != null) {
+
+                aulaanterior.activada = false;
+            }
+            aulaanterior = vm.AulaSeleccionada;
+            vm.AulaSeleccionada = (Aula_M)e.Item;
+            vm.AulaSeleccionada.activada = true;
+           
+
+
+
+
 
             //Deselect Item
             //((ListView)sender).SelectedItem = null;
@@ -40,7 +51,8 @@ namespace Proyecto_Inventario_JavierMT.View
 
         private void Add(object sender, EventArgs e)
         {
-            vm.AddVM();
+            Navigation.PushAsync(new AulaDetalle_V());
+            
 
         }
 
@@ -59,9 +71,9 @@ namespace Proyecto_Inventario_JavierMT.View
 
         }
 
-        private void ActivaBorrar(object sender, EventArgs e)
+        private void Editar(object sender, EventArgs e)
         {
-            vm.CambiaBoton();
+            Navigation.PushAsync(new ListaDispositivos_V(vm.AulaSeleccionada));
         }
     }
 }

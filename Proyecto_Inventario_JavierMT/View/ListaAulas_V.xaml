@@ -4,29 +4,29 @@
              x:Class="Proyecto_Inventario_JavierMT.View.ListaAulas_V">
     <ContentPage.ToolbarItems>
         <ToolbarItem
-            Clicked="Add"
-            IconImageSource="{OnPlatform UWP='Assets/plus.png', Android='plus.png'}">
-        </ToolbarItem>
-        <ToolbarItem
-            Clicked="ActivaBorrar"
-            IconImageSource="{OnPlatform UWP='Assets/borrar.png', Android='borrar.png'}">
-        </ToolbarItem>
-        <ToolbarItem
             Clicked="Sort"
             IconImageSource="{OnPlatform UWP='Assets/sort.png', Android='sort.png'}">
         </ToolbarItem>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <ListView x:Name="MyListView"
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            
+            
+            <ScrollView Grid.Row="0">
+                <StackLayout>
+                <ListView x:Name="MyListView"
             ItemsSource="{Binding aulaslist}"
             ItemTapped="Handle_ItemTapped"
             CachingStrategy="RecycleElement">
 
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
-                        <StackLayout>
-                            <Grid Margin="10" Padding="20">
+                                <ViewCell>
+                                    <Grid Margin="10" Padding="20" >
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="30"/>
                                     <RowDefinition Height="30"/>
@@ -37,10 +37,9 @@
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="50"/>
                                 </Grid.ColumnDefinitions>
 
-                            <ImageButton Source="{OnPlatform UWP='Assets/borrar.png', Android='borrar.png'}" Grid.Row="1" Grid.Column="3"
- Clicked="Borrar"  Grid.RowSpan="2" IsVisible="{Binding botonborrar}"/>
                             <Label Text="Código" Grid.Column="0" Grid.Row="0"/>
                             <Entry Text="{Binding codigo}" Grid.Column="1" Grid.Row="0" />
                             <Label Text="Nombre" Grid.Column="0" Grid.Row="1"/>
@@ -49,12 +48,20 @@
                             <Entry Text="{Binding abreviatura}" Grid.Column="1" Grid.Row="2"  />
                             <Label Text="Nivel" Grid.Column="0" Grid.Row="3"/>
                             <Entry Text="{Binding nivel}" Grid.Column="1" Grid.Row="3"/>
-
-                            </Grid>
-                        </StackLayout>
+                                        <ImageButton Source="{OnPlatform UWP='Assets/borrar.png', Android='borrar.png'}" Grid.Row="1" Grid.Column="3"
+ Clicked="Borrar"  Grid.RowSpan="2" IsVisible="{Binding activada}"/>
+                                        <ImageButton Source="{OnPlatform UWP='Assets/edit.png', Android='edit.png'}" Grid.Row="1" Grid.Column="4"
+ Clicked="Editar"  Grid.RowSpan="2" IsVisible="{Binding activada}"/>
+                                    </Grid>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+                </StackLayout>
+            </ScrollView>
+            <ImageButton Source="{OnPlatform UWP='Assets/plus.png', Android='plus.png'}" Grid.Row="0"  WidthRequest="160" HeightRequest="70" Margin="10" HorizontalOptions="End" VerticalOptions="End" Clicked="Add"  />
+
+        </Grid>
+      
     </ContentPage.Content>
 </ContentPage>

@@ -3,6 +3,8 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
+using Proyecto_Inventario_JavierMT.Model;
+using Proyecto_Inventario_JavierMT.ViewModel;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,22 +14,16 @@ namespace Proyecto_Inventario_JavierMT.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListaDispositivos_V : ContentPage
     {
-        public ObservableCollection<string> Items { get; set; }
+        private ListaDispositivos_VM vm;
 
-        public ListaDispositivos_V()
+        public ListaDispositivos_V(Aula_M aula)
         {
+            vm = new ListaDispositivos_VM();
+            BindingContext = vm;
             InitializeComponent();
+           
 
-            Items = new ObservableCollection<string>
-            {
-                "Item 1",
-                "Item 2",
-                "Item 3",
-                "Item 4",
-                "Item 5"
-            };
 
-            MyListView.ItemsSource = Items;
         }
 
         async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)

@@ -12,6 +12,8 @@ namespace Proyecto_Inventario_JavierMT.Model
         public int num_factura { get; set; }
         public DateTime fecha_compra { get; set; }
         public string descripcion { get; set; }
+        public string codigoaula { get; set; }
+
         private double pulgadas { get; set; }
         private string marca { get; set; }
     }

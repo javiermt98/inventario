@@ -11,5 +11,6 @@ namespace Proyecto_Inventario_JavierMT.Model
         int num_factura { get; set; }
         DateTime fecha_compra { get; set; }
         string descripcion { get; set; }
+        string codigoaula { get; set; }
     }
 }
