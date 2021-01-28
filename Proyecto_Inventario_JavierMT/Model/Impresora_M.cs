@@ -2,21 +2,23 @@
 using System.Collections.Generic;
 using System.Text;
 using SQLite;
+using SQLiteNetExtensions.Attributes;
 
 namespace Proyecto_Inventario_JavierMT.Model
 {
     [Table("Impresora")]
-    public class Impresora_M : Dispositivos_I
+    public class Impresora_M : Dispositivo
     {
         [PrimaryKey, AutoIncrement]
-        public int id_dispositivo { get; set; }
-        public int num_factura { get; set; }
-        public DateTime fecha_compra { get; set; }
-        public string descripcion { get; set; }
-        public string codigoaula { get; set; }
+        public int id_impresora { get; set; }
         private string tipo { get; set; }
         private bool escaner { get; set; }
         private bool color { get; set; }
+
+        [ForeignKey(typeof(Dispositivo))]
+        public int Dispositivo { get; set; }
+        [OneToOne]
+        public Dispositivo dispositivo { get; set; }
 
     }
 }

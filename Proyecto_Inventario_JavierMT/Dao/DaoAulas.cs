@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Proyecto_Inventario_JavierMT.Model;
+using SQLiteNetExtensions.Exceptions;
 
 using SQLite;
 

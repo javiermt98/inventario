@@ -20,6 +20,7 @@ namespace Proyecto_Inventario_JavierMT.View
         {
             vm = new ListaDispositivos_VM();
             BindingContext = vm;
+            vm.aula = aula;
             InitializeComponent();
            
 

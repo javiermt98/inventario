@@ -17,10 +17,18 @@ namespace Proyecto_Inventario_JavierMT.DataBase
         });
 
         public static SQLiteAsyncConnection ConectionDatabase => lazyInitializer.Value;
+        //public static SQLiteConnection ConectionDatabase = new SQLite.SQLiteConnection(Constants.DatabasePath);
 
         static DataBase_Inventario() {
 
             ConectionDatabase.CreateTableAsync<Aula_M>();
+            ConectionDatabase.CreateTableAsync<Dispositivo>();
+            ConectionDatabase.CreateTableAsync<Impresora_M>();
+            ConectionDatabase.CreateTableAsync<Monitor_M>();
+            ConectionDatabase.CreateTableAsync<Ordenador_M>();
+            ConectionDatabase.CreateTableAsync<Router_M>();
+            ConectionDatabase.CreateTableAsync<Switch_M>();
+
         }
     }
 }

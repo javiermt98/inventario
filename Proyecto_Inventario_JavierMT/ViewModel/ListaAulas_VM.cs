@@ -16,9 +16,11 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
         public ObservableCollection<Aula_M> aulaslist { get { return _aulaslist; } set { _aulaslist = value; OnPropertyChanged(); } }
 
         public ListaAulas_VM() {
+            
+                Task<List<Aula_M>> TaskAulas = Provider.daoAulas.AllAulasAsync();
+                aulaslist = new ObservableCollection<Aula_M>(TaskAulas.Result);
+            
 
-            Task<List<Aula_M>> TaskAulas = Provider.daoAulas.AllAulasAsync();
-            aulaslist = new ObservableCollection<Aula_M>(TaskAulas.Result);
         }
 
          
