@@ -12,30 +12,19 @@ using Xamarin.Forms.Xaml;
 namespace Proyecto_Inventario_JavierMT.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ListaDispositivos_V : ContentPage
+    public partial class ListaDispositivos_V : TabbedPage
     {
         private ListaDispositivos_VM vm;
 
         public ListaDispositivos_V(Aula_M aula)
         {
-            vm = new ListaDispositivos_VM();
-            BindingContext = vm;
-            vm.aula = aula;
+
             InitializeComponent();
            
 
 
         }
 
-        async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
-        {
-            if (e.Item == null)
-                return;
 
-            await DisplayAlert("Item Tapped", "An item was tapped.", "OK");
-
-            //Deselect Item
-            ((ListView)sender).SelectedItem = null;
-        }
     }
 }

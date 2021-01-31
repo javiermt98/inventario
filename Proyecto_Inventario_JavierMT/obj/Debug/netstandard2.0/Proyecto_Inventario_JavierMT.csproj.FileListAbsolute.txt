@@ -33,3 +33,5 @@ F:\JAVIERDAM\DAM\2DAM\PM\2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_Ja
 F:\JAVIERDAM\DAM\2DAM\PM\2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT\obj\Debug\netstandard2.0\Proyecto_Inventario_JavierMT.dll
 F:\JAVIERDAM\DAM\2DAM\PM\2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT\obj\Debug\netstandard2.0\ref\Proyecto_Inventario_JavierMT.dll
 F:\JAVIERDAM\DAM\2DAM\PM\2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT\obj\Debug\netstandard2.0\Proyecto_Inventario_JavierMT.pdb
+C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT\obj\Debug\netstandard2.0\View\ListaOrdenador_V.xaml.g.cs
+C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT\obj\Debug\netstandard2.0\View\OrdenadorDetalle_V.xaml.g.cs

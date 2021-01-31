@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "F:\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.iOS\\Proyecto_Inventario_JavierMT.iOS.csproj": {}
+    "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.iOS\\Proyecto_Inventario_JavierMT.iOS.csproj": {}
   },
   "projects": {
-    "F:\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.iOS\\Proyecto_Inventario_JavierMT.iOS.csproj": {
+    "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.iOS\\Proyecto_Inventario_JavierMT.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.iOS\\Proyecto_Inventario_JavierMT.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.iOS\\Proyecto_Inventario_JavierMT.iOS.csproj",
         "projectName": "Proyecto_Inventario_JavierMT.iOS",
-        "projectPath": "F:\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.iOS\\Proyecto_Inventario_JavierMT.iOS.csproj",
-        "packagesPath": "C:\\Users\\lliurex\\.nuget\\packages\\",
-        "outputPath": "F:\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.iOS\\obj\\",
+        "projectPath": "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.iOS\\Proyecto_Inventario_JavierMT.iOS.csproj",
+        "packagesPath": "C:\\Users\\javie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\lliurex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\javie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "F:\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj": {
-                "projectPath": "F:\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj"
+              "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj": {
+                "projectPath": "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj"
               }
             }
           }
@@ -73,21 +73,20 @@
         }
       }
     },
-    "F:\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj": {
+    "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj",
+        "projectUniqueName": "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj",
         "projectName": "Proyecto_Inventario_JavierMT",
-        "projectPath": "F:\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj",
-        "packagesPath": "C:\\Users\\lliurex\\.nuget\\packages\\",
-        "outputPath": "F:\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT\\obj\\",
+        "projectPath": "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj",
+        "packagesPath": "C:\\Users\\javie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\lliurex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\javie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -145,7 +144,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

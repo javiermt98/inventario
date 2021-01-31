@@ -1,1 +1,1 @@
-F:\JAVIERDAM\DAM\2DAM\PM\2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Proyecto_Inventario_JavierMT.UWP.csproj;x86
+C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Proyecto_Inventario_JavierMT.UWP.csproj;x86

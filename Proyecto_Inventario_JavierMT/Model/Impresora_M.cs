@@ -11,9 +11,9 @@ namespace Proyecto_Inventario_JavierMT.Model
     {
         [PrimaryKey, AutoIncrement]
         public int id_impresora { get; set; }
-        private string tipo { get; set; }
-        private bool escaner { get; set; }
-        private bool color { get; set; }
+        public string tipo { get; set; }
+        public bool escaner { get; set; }
+        public bool color { get; set; }
 
         [ForeignKey(typeof(Dispositivo))]
         public int Dispositivo { get; set; }

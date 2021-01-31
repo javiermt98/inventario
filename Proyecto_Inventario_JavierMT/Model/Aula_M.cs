@@ -16,11 +16,11 @@ namespace Proyecto_Inventario_JavierMT.Model
         private string _nombre { get; set; }
         private string _abreviatura { get; set; }
         private string _nivel { get; set; }
-
+        
         private bool _activada { get; set; } = false;
         [ForeignKey(typeof(Dispositivo))]
         private int dispositivos_ID { get; set; }
-        [OneToMany]
+        [OneToMany(CascadeOperations = CascadeOperation.All)]
         public List<Dispositivo> dispositivos { get; set; }
 
 
@@ -28,7 +28,7 @@ namespace Proyecto_Inventario_JavierMT.Model
         public string nombre { get { return _nombre; } set { _nombre = value; OnPropertyChanged(); } }
         public string abreviatura { get { return _abreviatura; } set { _abreviatura = value; OnPropertyChanged(); } }
         public string nivel { get { return _nivel; } set { _nivel = value; OnPropertyChanged(); } }
-
+        [Ignore]
         public bool activada { get { return _activada; } set { _activada = value; OnPropertyChanged(); } }
 
 

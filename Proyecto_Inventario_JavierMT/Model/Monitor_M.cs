@@ -12,8 +12,8 @@ namespace Proyecto_Inventario_JavierMT.Model
     {
         [PrimaryKey, AutoIncrement]
         public int id_monitor { get; set; }
-        private double pulgadas { get; set; }
-        private string marca { get; set; }
+        public double pulgadas { get; set; }
+        public string marca { get; set; }
 
         [ForeignKey(typeof(Dispositivo))]
         public int Dispositivo { get; set; }

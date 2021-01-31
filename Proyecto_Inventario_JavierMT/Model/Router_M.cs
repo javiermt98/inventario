@@ -14,9 +14,9 @@ namespace Proyecto_Inventario_JavierMT.Model
         public int id_router { get; set; }
 
 
-        private int num_puertos { get; set; }
-        private double velocidad { get; set; }
-        private bool wifi { get; set; }
+        public int num_puertos { get; set; }
+        public double velocidad { get; set; }
+        public bool wifi { get; set; }
 
         [ForeignKey(typeof(Dispositivo))]
         public int Dispositivo { get; set; }

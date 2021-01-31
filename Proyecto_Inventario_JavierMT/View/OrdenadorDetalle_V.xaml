@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_Inventario_JavierMT.View.OrdenadorDetalle_V">
+    <ContentPage.Content>
+        <StackLayout Margin="20" Padding="15">
+            <Label Text="Tipo"/>
+            <Picker x:Name="tipo"
+                Title="Tipo"
+                TitleColor="Black">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Sobremesa</x:String>
+                        <x:String>Ordenador Portátil</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Label Text="Función"/>
+            <Picker x:Name="funcion"
+                Title="Función"
+                TitleColor="Black">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Cliente</x:String>
+                        <x:String>Servidor de Aula</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Label Text="Sistema Operativo"/>
+            <Picker x:Name="sistop"
+                Title="Sistema Operativo"
+                TitleColor="Black">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Windows Activado</x:String>
+                        <x:String>Windows No Activado</x:String>
+                        <x:String>Windows Lliurex</x:String>
+                        <x:String>Windows Linux</x:String>
+                        <x:String>DUAL (Windows Activado / Lliurex)</x:String>
+                        <x:String>DUAL (Windows No Activado / Lliurex)</x:String>
+                        <x:String>DUAL (Windows Activado / Linux)</x:String>
+                        <x:String>DUAL (Windows No Activado / Linux)</x:String>
+                        <x:String>DUAL (Linux / Lliurex)</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Button Text="Guardar Aula" Clicked="Guardar" Margin="20" Padding="5" BackgroundColor="Blue" TextColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
