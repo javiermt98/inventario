@@ -5,18 +5,34 @@
              BackgroundColor="AliceBlue">
 
     <!--Built in Cells-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <StackLayout Margin="20" Padding="15">
+            <Label Text="Código" Grid.Row="0" Grid.Column="0"/>
+            <Entry Placeholder="Código del aula" Margin="0,0,0,15" x:Name="codigo" Text="{Binding AulaSeleccionada.codigo}" Grid.Row="0" Grid.Column="1"/>
+            <Label Text="Nombre" Grid.Row="1" Grid.Column="0" />
+            <Entry Placeholder="Nombre del aula"  Margin="0,0,0,15" x:Name="nombre" Text="{Binding AulaSeleccionada.nombre}" Grid.Row="1" Grid.Column="1"/>
+            <Label Text="Abreviatura" Grid.Row="2" Grid.Column="0" />
+            <Entry Placeholder="Abreviatura del aula"  Margin="0,0,0,15" x:Name="abrev" Text="{Binding AulaSeleccionada.abreviatura}" Grid.Row="2" Grid.Column="1"/>
+            <Label Text="Nivel" Grid.Row="3" Grid.Column="0"/>
+            <Entry Placeholder="Nivel donde se encuentra el aula"  Margin="0,0,0,15" x:Name="lvl" Text="{Binding AulaSeleccionada.nivel}" Grid.Row="3" Grid.Column="1"/>
+            <Button Text="Guardar Aula" Clicked="Guardar" Margin="20" Padding="5" BackgroundColor="Blue" TextColor="White" Grid.Row="4" Grid.Column="0"/>
+            <Button Text="Reset" Clicked="Reset" Margin="20" Padding="5" BackgroundColor="Blue" TextColor="White" Grid.Row="4" Grid.Column="1"/>
+        </StackLayout>
 
-    <StackLayout Margin="20" Padding="15">
-        <Label Text="Código"/>
-        <Entry Placeholder="Código del aula" Margin="0,0,0,15" x:Name="codigo" />
-        <Label Text="Nombre" />
-        <Entry Placeholder="Nombre del aula"  Margin="0,0,0,15" x:Name="nombre" />
-        <Label Text="Abreviatura" />
-        <Entry Placeholder="Abreviatura del aula"  Margin="0,0,0,15" x:Name="abrev"/>
-        <Label Text="Nivel" />
-        <Entry Placeholder="Nivel donde se encuentra el aula"  Margin="0,0,0,15" x:Name="lvl"/>
-        <Button Text="Guardar Aula" Clicked="Guardar" Margin="20" Padding="5" BackgroundColor="Blue" TextColor="White"/>
-    </StackLayout> 
+    </Grid>
+   
     
 
 </ContentPage>

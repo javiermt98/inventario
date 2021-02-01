@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Text;
 using SQLite;
 using SQLiteNetExtensions.Attributes;
+using Proyecto_Inventario_JavierMT.Helpers;
 
 namespace Proyecto_Inventario_JavierMT.Model
 {
     [Table("Impresora")]
-    public class Impresora_M : Dispositivo
+    public class Impresora_M : NotifyPropertyBase
     {
         [PrimaryKey, AutoIncrement]
         public int id_impresora { get; set; }

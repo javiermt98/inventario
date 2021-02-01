@@ -9,9 +9,11 @@ namespace Proyecto_Inventario_JavierMT.Model
     [Table("Dispositivos")]
     public class Dispositivo
     {
+
         [PrimaryKey, AutoIncrement]
         public int id_dispositivo { get; set; }
-        public int num_factura { get; set; }
+        public string nombre { get; set; }
+        public string num_factura { get; set; }
         public DateTime fecha_compra { get; set; }
         public string descripcion { get; set; }
         [ManyToOne(CascadeOperations = CascadeOperation.All)]

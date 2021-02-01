@@ -3,8 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Proyecto_Inventario_JavierMT.View.OrdenadorDetalle_V">
     <ContentPage.Content>
+        
         <StackLayout Margin="20" Padding="15">
-            <Label Text="Tipo"/>
+            <Label Text="Nombre" />
+            <Entry x:Name="nombre" Placeholder="Nombre del dispositivo" Text="{Binding disp.nombre}"/>
+            <Label Text="Número de Factura" />
+            <Entry x:Name="factura" Placeholder="Número de Factura del dispositivo" Text="{Binding disp.num_factura}" />
+            <Label Text="Fecha de Compra "/>
+            <DatePicker x:Name="fechacompra" Margin="10" Date="{Binding disp.fecha_factura}" />
+            <Label x:Name="descripcion" Text="Descripción"/>
+            <Entry Placeholder="Descripción del dispositivo" HeightRequest="100" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" Text="{Binding disp.descripcion}" />
             <Picker x:Name="tipo"
                 Title="Tipo"
                 TitleColor="Black">
@@ -15,7 +23,6 @@
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
-            <Label Text="Función"/>
             <Picker x:Name="funcion"
                 Title="Función"
                 TitleColor="Black">
@@ -26,7 +33,6 @@
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
-            <Label Text="Sistema Operativo"/>
             <Picker x:Name="sistop"
                 Title="Sistema Operativo"
                 TitleColor="Black">
@@ -44,7 +50,7 @@
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
-            <Button Text="Guardar Aula" Clicked="Guardar" Margin="20" Padding="5" BackgroundColor="Blue" TextColor="White"/>
+            <Button Text="Guardar Ordenador" Clicked="Guardar" Margin="20" Padding="5" BackgroundColor="Blue" TextColor="White"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

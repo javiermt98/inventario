@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Text;
 using SQLite;
 using SQLiteNetExtensions.Attributes;
+using Proyecto_Inventario_JavierMT.Helpers;
 
 namespace Proyecto_Inventario_JavierMT.Model
 {
     [Table("Switch")]
-    public class Switch_M : Dispositivo
+    public class Switch_M : NotifyPropertyBase
     {
         [PrimaryKey, AutoIncrement]
         public int id_switch { get; set; }

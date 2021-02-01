@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Text;
 using SQLite;
 using SQLiteNetExtensions.Attributes;
+using Proyecto_Inventario_JavierMT.Helpers;
 
 
 namespace Proyecto_Inventario_JavierMT.Model
 {
     [Table("Monitor")]
-    public class Monitor_M : Dispositivo
+    public class Monitor_M : NotifyPropertyBase
     {
         [PrimaryKey, AutoIncrement]
         public int id_monitor { get; set; }

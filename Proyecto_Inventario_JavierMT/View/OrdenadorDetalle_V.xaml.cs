@@ -29,20 +29,27 @@ namespace Proyecto_Inventario_JavierMT.View
 
         private void Guardar(object sender, EventArgs e)
         {
-            
-            Ordenador_M ordenador = new Ordenador_M(tipo.SelectedIndex.ToString(), funcion.SelectedIndex.ToString(), sistop.SelectedIndex.ToString());
-            if (vm.ComprobarPc(ordenador))
+            if (!String.IsNullOrWhiteSpace(nombre.Text) && !String.IsNullOrWhiteSpace(factura.Text))
             {
-                vm.AddVM(ordenador);
-                DisplayAlert("ACEPT", "Ordenador Registrado", "Aceptar");
-                Navigation.PopAsync();
-            }
-            else
-            {
-
-                DisplayAlert("CANCEL", "Ya existe un aula con ese Código", "Aceptar");
+                DisplayAlert("ERROR", "No puede haber campos vacíos", "Aceptar");
 
             }
+            else {
+
+                if (vm.ComprobarPc())
+                {
+                    vm.AddVM();
+                    DisplayAlert("ACEPT", "Ordenador Registrado", "Aceptar");
+                    Navigation.PopAsync();
+                }
+                else
+                {
+
+                    DisplayAlert("CANCEL", "Ya existe un ordenador con ese Nombre", "Aceptar");
+
+                }
+            }
+           
             
 
 

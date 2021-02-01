@@ -37,7 +37,6 @@ namespace Proyecto_Inventario_JavierMT.View
                 aulaanterior.activada = false;
             }
             aulaanterior = vm.AulaSeleccionada;
-            vm.AulaSeleccionada = (Aula_M)e.Item;
             vm.AulaSeleccionada.activada = true;
            
 
@@ -51,7 +50,8 @@ namespace Proyecto_Inventario_JavierMT.View
 
         private void Add(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new AulaDetalle_V());
+            
+            Navigation.PushAsync(new AulaDetalle_V(vm.AulaSeleccionada));
             
 
         }
@@ -73,7 +73,7 @@ namespace Proyecto_Inventario_JavierMT.View
 
         private void Editar(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ListaDispositivos_V(vm.AulaSeleccionada));
+            Navigation.PushAsync(new ListaDispositivos_V());
         }
     }
 }

@@ -10,7 +10,8 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
 {
     public class ListaAulas_VM : NotifyPropertyBase
     {
-        public Aula_M AulaSeleccionada { get; set; }
+        private Aula_M _AulaSeleccionada{get;set;}
+        public Aula_M AulaSeleccionada { get { return _AulaSeleccionada; } set { _AulaSeleccionada = value; OnPropertyChanged(); } }
 
         private ObservableCollection<Aula_M> _aulaslist { get; set; }
         public ObservableCollection<Aula_M> aulaslist { get { return _aulaslist; } set { _aulaslist = value; OnPropertyChanged(); } }
@@ -19,31 +20,13 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
             
                 Task<List<Aula_M>> TaskAulas = Provider.daoAulas.AllAulasAsync();
                 aulaslist = new ObservableCollection<Aula_M>(TaskAulas.Result);
-            
+                OnPropertyChanged("aulaslist");
+
 
         }
 
          
-        public bool ComprobarAula(Aula_M aula)
-        {
-            bool existe = true;
-            foreach(Aula_M a in aulaslist){
-                if (a.codigo.Equals(aula.codigo))
-                {
-                    existe = false;
-                }
-            }
 
-            return existe;
-           
-
-        }
-
-        public void AddVM(Aula_M aula) {
-            aulaslist.Insert(0, aula);
-            Provider.daoAulas.Insert(aula);
-            OnPropertyChanged("aulaslist");
-        }
         public void BorrarVM() {
 
             //Provider.daoAulas.Borrar(AulaSeleccionada);

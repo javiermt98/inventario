@@ -8,21 +8,14 @@ using Proyecto_Inventario_JavierMT.Helpers;
 namespace Proyecto_Inventario_JavierMT.Model
 {
     [Table("Ordenador")]
-    public class Ordenador_M: Dispositivo
+    public class Ordenador_M: NotifyPropertyBase
     {
         [ForeignKey(typeof(Dispositivo))]
         public int id_ordenador { get; set; }
         public string tipo { get;set; }
         public string funcion { get; set; }
         public string sistop { get; set; }
-
-        public Ordenador_M() { }
-        public Ordenador_M(string tipo, string funcion, string sistop) {
-
-            this.tipo = tipo;
-            this.funcion = funcion;
-            this.sistop = sistop;
-        }
+        public Dispositivo disp { get; set; }
 
         [ForeignKey(typeof(Dispositivo))]
         public int Dispositivo { get; set; }
