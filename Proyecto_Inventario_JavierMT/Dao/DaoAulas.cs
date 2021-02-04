@@ -6,6 +6,7 @@ using Proyecto_Inventario_JavierMT.Model;
 using SQLiteNetExtensions.Exceptions;
 
 using SQLite;
+using SQLiteNetExtensionsAsync.Extensions;
 
 namespace Proyecto_Inventario_JavierMT.Dao
 {
@@ -45,6 +46,6 @@ namespace Proyecto_Inventario_JavierMT.Dao
             return this.connection.DeleteAsync(aula).Result;
         }
 
-
+       
     }
     }

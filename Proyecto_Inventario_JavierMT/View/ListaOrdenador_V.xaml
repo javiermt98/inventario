@@ -13,7 +13,7 @@
             <ScrollView Grid.Row="0">
                 <StackLayout>
                     <ListView x:Name="MyListView"
-            ItemsSource="{Binding pclist}"
+            ItemsSource="{Binding listaordenadores}"
             ItemTapped="Handle_ItemTapped"
             CachingStrategy="RecycleElement">
 

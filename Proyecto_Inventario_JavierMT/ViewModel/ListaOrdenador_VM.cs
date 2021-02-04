@@ -12,14 +12,16 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
     {
         public ListaOrdenador_VM PcSeleccionado { get; set; }
 
-        private ObservableCollection<ListaOrdenador_VM> _pclist { get; set; }
-        public ObservableCollection<ListaOrdenador_VM> pclist { get { return _pclist; } set { _pclist = value; OnPropertyChanged(); } }
+        private ObservableCollection<Ordenador_M> _listaordenadores { get; set; }
+
+        public ObservableCollection<Ordenador_M> listaordenadores { get { return _listaordenadores; } set { _listaordenadores = value; OnPropertyChanged(); } }
+        public Task<List<Ordenador_M>> TaskOrdenador { get; set; }
 
         public ListaOrdenador_VM()
         {
-
-            //Task<List<Ordenador_VM>> TaskAulas = Provider.daoAulas.AllAulasAsync();
-            //pclist = new ObservableCollection<Ordenador_VM>(TaskAulas.Result);
+            TaskOrdenador = Provider.daoOrdenadores.AllOrdenadoresAsync();
+            listaordenadores = new ObservableCollection<Ordenador_M>(TaskOrdenador.Result);
+            OnPropertyChanged();
 
 
         }

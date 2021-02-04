@@ -16,7 +16,7 @@ namespace Proyecto_Inventario_JavierMT.View
     {
         private OrdenadorDetalle_VM vm;
         public OrdenadorDetalle_V()
-        {
+        {   
             InitializeComponent();
             vm = new OrdenadorDetalle_VM();
             BindingContext = vm;
@@ -29,15 +29,15 @@ namespace Proyecto_Inventario_JavierMT.View
 
         private void Guardar(object sender, EventArgs e)
         {
-            if (!String.IsNullOrWhiteSpace(nombre.Text) && !String.IsNullOrWhiteSpace(factura.Text))
+            if (String.IsNullOrWhiteSpace(nombre.Text) || String.IsNullOrWhiteSpace(factura.Text))
             {
                 DisplayAlert("ERROR", "No puede haber campos vacíos", "Aceptar");
 
             }
             else {
-
+                
                 if (vm.ComprobarPc())
-                {
+                {   
                     vm.AddVM();
                     DisplayAlert("ACEPT", "Ordenador Registrado", "Aceptar");
                     Navigation.PopAsync();

@@ -19,5 +19,16 @@ namespace Proyecto_Inventario_JavierMT.Helpers
                 return _daoAulas;
             }
         }
+
+        private static DaoOrdenadores _daoOrdenadores;
+
+        public static DaoOrdenadores daoOrdenadores
+        {
+            get
+            {
+                if (_daoOrdenadores == null) _daoOrdenadores = new DaoOrdenadores(DataBase_Inventario.ConectionDatabase);
+                return _daoOrdenadores;
+            }
+        }
     }
 }

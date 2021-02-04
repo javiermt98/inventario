@@ -29,7 +29,6 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
 
         public void BorrarVM() {
 
-            //Provider.daoAulas.Borrar(AulaSeleccionada);
             aulaslist.Remove(AulaSeleccionada);
             Provider.daoAulas.Borrar(AulaSeleccionada);
             OnPropertyChanged("aulaslist");

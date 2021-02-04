@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Proyecto_Inventario_JavierMT.View.OrdenadorDetalle_V">
     <ContentPage.Content>
-        
+
         <StackLayout Margin="20" Padding="15">
             <Label Text="Nombre" />
             <Entry x:Name="nombre" Placeholder="Nombre del dispositivo" Text="{Binding disp.nombre}"/>
@@ -15,7 +15,8 @@
             <Entry Placeholder="Descripción del dispositivo" HeightRequest="100" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" Text="{Binding disp.descripcion}" />
             <Picker x:Name="tipo"
                 Title="Tipo"
-                TitleColor="Black">
+                TitleColor="Black"
+                SelectedItem="{Binding ordenadorseleccionado.tipo}">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Sobremesa</x:String>
@@ -25,7 +26,8 @@
             </Picker>
             <Picker x:Name="funcion"
                 Title="Función"
-                TitleColor="Black">
+                TitleColor="Black"
+                SelectedItem="{Binding ordenadorseleccionado.funcion}">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Cliente</x:String>
@@ -35,7 +37,8 @@
             </Picker>
             <Picker x:Name="sistop"
                 Title="Sistema Operativo"
-                TitleColor="Black">
+                TitleColor="Black"
+                SelectedItem="{Binding ordenadorseleccionado.sistop}">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Windows Activado</x:String>
