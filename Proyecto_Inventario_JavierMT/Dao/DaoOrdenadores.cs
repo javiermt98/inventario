@@ -25,13 +25,13 @@ namespace Proyecto_Inventario_JavierMT.Dao
 
         public void InsertOrdenadores(Ordenador_M ordenador)
         {
-            if (ordenador.disp.id_dispositivo == 0)
+            if (ordenador.dispositivo.id_dispositivo == 0)
             {
-                this.connection.InsertWithChildrenAsync(ordenador.disp);
+                this.connection.InsertWithChildrenAsync(ordenador);
             }
             else
             {
-                this.connection.UpdateWithChildrenAsync(ordenador.disp);
+                this.connection.UpdateWithChildrenAsync(ordenador);
             }
         }
     }

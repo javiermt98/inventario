@@ -30,5 +30,20 @@ namespace Proyecto_Inventario_JavierMT.Helpers
                 return _daoOrdenadores;
             }
         }
+
+        public static List<String> listatipos { get; set; } = new List<String> { "Sobremesa", "Portatil" };
+        public static List<String> listafuncion { get; set; } = new List<String> { "Servidor de Aula", "Cliente" };
+        public static List<String> listasistop { get; set; } = new List<String> 
+        {
+            "Windows Activado",
+            "Windows No Activado",
+            "Windows Lliurex",
+            "Windows Linux",
+            "DUAL (Windows Activado / Lliurex)",
+            "DUAL (Windows No Activado / Lliurex)",
+            "DUAL (Windows Activado / Linux)",
+            "DUAL (Windows No Activado / Linux)",
+            "DUAL (Linux / Lliurex)"
+        };
     }
 }

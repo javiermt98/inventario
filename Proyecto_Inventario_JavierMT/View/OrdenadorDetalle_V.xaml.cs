@@ -15,6 +15,7 @@ namespace Proyecto_Inventario_JavierMT.View
     public partial class OrdenadorDetalle_V : ContentPage
     {
         private OrdenadorDetalle_VM vm;
+        private Ordenador_M OrdenadorPicker;
         public OrdenadorDetalle_V()
         {   
             InitializeComponent();
@@ -27,6 +28,8 @@ namespace Proyecto_Inventario_JavierMT.View
 
         }
 
+
+
         private void Guardar(object sender, EventArgs e)
         {
             if (String.IsNullOrWhiteSpace(nombre.Text) || String.IsNullOrWhiteSpace(factura.Text))
@@ -34,6 +37,12 @@ namespace Proyecto_Inventario_JavierMT.View
                 DisplayAlert("ERROR", "No puede haber campos vacíos", "Aceptar");
 
             }
+
+
+
+
+
+
             else {
                 
                 if (vm.ComprobarPc())

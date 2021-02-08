@@ -15,7 +15,6 @@ namespace Proyecto_Inventario_JavierMT.Model
         public string tipo { get;set; }
         public string funcion { get; set; }
         public string sistop { get; set; }
-        public Dispositivo disp { get; set; }
 
         [ForeignKey(typeof(Dispositivo))]
         public int Dispositivo { get; set; }
