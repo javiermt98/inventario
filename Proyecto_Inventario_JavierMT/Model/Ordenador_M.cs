@@ -10,7 +10,7 @@ namespace Proyecto_Inventario_JavierMT.Model
     [Table("Ordenador")]
     public class Ordenador_M: NotifyPropertyBase
     {
-        [ForeignKey(typeof(Dispositivo))]
+        [PrimaryKey, AutoIncrement]
         public int id_ordenador { get; set; }
         public string tipo { get;set; }
         public string funcion { get; set; }

@@ -18,7 +18,7 @@ namespace Proyecto_Inventario_JavierMT.View
 
         public ListaDispositivos_V()
         {
-
+            vm = new ListaDispositivos_VM();
             InitializeComponent();
            
 

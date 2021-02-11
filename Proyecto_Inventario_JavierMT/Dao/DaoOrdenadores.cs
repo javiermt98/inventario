@@ -27,7 +27,10 @@ namespace Proyecto_Inventario_JavierMT.Dao
         {
             if (ordenador.dispositivo.id_dispositivo == 0)
             {
-                this.connection.InsertWithChildrenAsync(ordenador);
+                this.connection.InsertWithChildrenAsync(ordenador.dispositivo).Wait();
+                this.connection.InsertAsync(ordenador).Wait();
+                this.connection.UpdateWithChildrenAsync(ordenador).Wait();
+
             }
             else
             {

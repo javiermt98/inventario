@@ -34,7 +34,7 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
 
         internal bool ComprobarPc()
         {
-
+            
             ordenadorseleccionado.dispositivo = disp;
             TaskOrdenador = Provider.daoOrdenadores.AllOrdenadoresAsync();
             listaordenadores = new ObservableCollection<Ordenador_M>();

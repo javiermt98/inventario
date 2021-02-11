@@ -15,7 +15,6 @@ namespace Proyecto_Inventario_JavierMT.View
     public partial class OrdenadorDetalle_V : ContentPage
     {
         private OrdenadorDetalle_VM vm;
-        private Ordenador_M OrdenadorPicker;
         public OrdenadorDetalle_V()
         {   
             InitializeComponent();

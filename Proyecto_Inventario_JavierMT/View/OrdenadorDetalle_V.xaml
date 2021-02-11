@@ -16,17 +16,20 @@
             <Picker x:Name="tipo"
                 Title="Tipo"
                 TitleColor="Black"                
-                ItemsSource="{Binding listatipos}" />
+                ItemsSource="{Binding listatipos}" 
+               />
             
             <Picker x:Name="funcion"
                 Title="Función"
                 TitleColor="Black"
-                ItemsSource="{Binding listafuncion}" />
+                ItemsSource="{Binding listafuncion}" 
+               />
             
             <Picker x:Name="sistop"
                 Title="Sistema Operativo"
                 TitleColor="Black" 
-                ItemsSource="{Binding listasistop}" />
+                ItemsSource="{Binding listasistop}" 
+                />
             
             <Button Text="Guardar Ordenador" Clicked="Guardar" Margin="20" Padding="5" BackgroundColor="Blue" TextColor="White"/>
         </StackLayout>
