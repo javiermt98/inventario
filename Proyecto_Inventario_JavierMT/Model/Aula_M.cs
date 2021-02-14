@@ -16,7 +16,7 @@ namespace Proyecto_Inventario_JavierMT.Model
         private string _nombre { get; set; }
         private string _abreviatura { get; set; }
         private string _nivel { get; set; }
-        
+        [Ignore]
         private bool _activada { get; set; } = false;
         [ForeignKey(typeof(Dispositivo))]
         private int dispositivos_ID { get; set; }

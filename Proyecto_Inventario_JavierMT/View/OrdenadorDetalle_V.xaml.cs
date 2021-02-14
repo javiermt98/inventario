@@ -37,15 +37,19 @@ namespace Proyecto_Inventario_JavierMT.View
 
             }
 
-
-
-
-
-
             else {
                 
                 if (vm.ComprobarPc())
-                {   
+                {
+                    String f = funcion.Items[funcion.SelectedIndex];
+                    String t = tipo.Items[tipo.SelectedIndex];
+                    String s = sistop.Items[sistop.SelectedIndex];
+                    vm.ordenadorseleccionado.funcion = f;
+                    vm.ordenadorseleccionado.tipo = t;
+                    vm.ordenadorseleccionado.sistop = s;
+                   // vm.ordenadorseleccionado.dispositivo.aula = ;
+                    
+
                     vm.AddVM();
                     DisplayAlert("ACEPT", "Ordenador Registrado", "Aceptar");
                     Navigation.PopAsync();

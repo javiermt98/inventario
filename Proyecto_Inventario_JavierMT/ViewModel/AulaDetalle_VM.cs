@@ -16,18 +16,29 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
         private ObservableCollection<Aula_M> _aulaslist { get; set; }
         public ObservableCollection<Aula_M> aulaslist { get { return _aulaslist; } set { _aulaslist = value; OnPropertyChanged(); } }
 
+        public AulaDetalle_VM() {
+        }
         public bool ComprobarAula()
         {
+
             Task<List<Aula_M>> TaskAulas = Provider.daoAulas.AllAulasAsync();
             aulaslist = new ObservableCollection<Aula_M>(TaskAulas.Result);
             bool existe = true;
-            foreach (Aula_M a in aulaslist)
-            {
-                if (a.codigo.Equals(AulaSeleccionada.codigo))
-                {
-                    existe = false;
-                }
+            if (aulaslist == null) {
+                existe = false;
             }
+            else
+            {
+                foreach (Aula_M a in aulaslist)
+                {
+                    if (a.codigo.Equals(AulaSeleccionada.codigo))
+                    {
+                        existe = false;
+                    }
+                }
+
+            }
+
 
             return existe;
 

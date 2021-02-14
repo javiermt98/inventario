@@ -14,11 +14,20 @@ namespace Proyecto_Inventario_JavierMT.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AulaDetalle_V : ContentPage
     {
-        private AulaDetalle_VM vm;
+        private AulaDetalle_VM vm ;
         public AulaDetalle_V(Aula_M aula)
         {
             InitializeComponent();
-            vm = new AulaDetalle_VM { AulaSeleccionada = aula };
+            if (aula == null)
+            {
+                vm = new AulaDetalle_VM();
+                vm.AulaSeleccionada = new Aula_M();
+            }
+            else {
+                vm = new AulaDetalle_VM { AulaSeleccionada = aula };
+            }
+            
+            
             BindingContext = vm;
             
 
@@ -31,9 +40,8 @@ namespace Proyecto_Inventario_JavierMT.View
                 //Aula_M aula = new Aula_M(Convert.ToInt32(codigo.Text), nombre.Text, abrev.Text, lvl.Text);
                 if (vm.ComprobarAula())
                 {
-                    
-                    await DisplayAlert("ACEPT", "Aula creada", "ACEPTAR");
                     vm.AddVM();
+                    await DisplayAlert("ACEPT", "Aula creada", "ACEPTAR");
                     await Navigation.PopAsync();
                 }
                 else

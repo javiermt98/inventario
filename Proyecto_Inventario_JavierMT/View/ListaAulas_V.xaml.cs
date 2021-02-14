@@ -36,14 +36,10 @@ namespace Proyecto_Inventario_JavierMT.View
 
                 aulaanterior.activada = false;
             }
-            aulaanterior = vm.AulaSeleccionada;
-            vm.AulaSeleccionada.activada = true;
-           
 
-
-
-
-
+                aulaanterior = vm.AulaSeleccionada;
+                vm.AulaSeleccionada.activada = true;
+            
             //Deselect Item
             //((ListView)sender).SelectedItem = null;
         }
