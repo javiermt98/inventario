@@ -16,13 +16,14 @@ namespace Proyecto_Inventario_JavierMT.Model
         private string _nombre { get; set; }
         private string _abreviatura { get; set; }
         private string _nivel { get; set; }
+        private string _id_aula { get; set; }
+
         [Ignore]
         private bool _activada { get; set; } = false;
         [ForeignKey(typeof(Dispositivo))]
         private int dispositivos_ID { get; set; }
         [OneToMany(CascadeOperations = CascadeOperation.All)]
         public List<Dispositivo> dispositivos { get; set; }
-
 
         public int codigo { get { return _codigo; } set { _codigo = value; OnPropertyChanged(); } }
         public string nombre { get { return _nombre; } set { _nombre = value; OnPropertyChanged(); } }
@@ -32,17 +33,11 @@ namespace Proyecto_Inventario_JavierMT.Model
         public bool activada { get { return _activada; } set { _activada = value; OnPropertyChanged(); } }
 
 
+
         public Aula_M() { 
         
         }
-        public Aula_M(int codigo, string nombre, string abreviatura, string nivel) {
 
-            this.codigo = codigo;
-            this.nombre = nombre;
-            this.abreviatura = abreviatura;
-            this.nivel = nivel;
-
-        }
 
 
     }

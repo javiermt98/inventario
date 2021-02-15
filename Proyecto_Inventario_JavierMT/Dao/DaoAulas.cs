@@ -24,15 +24,15 @@ namespace Proyecto_Inventario_JavierMT.Dao
             return this.connection.Table<Aula_M>().ToListAsync();
         }
 
-        public int Insert(Aula_M aula)
+        public void Insert(Aula_M aula)
         {
             if (aula.Id == 0)
             {
-                return this.connection.InsertAsync(aula).Result;
+                 this.connection.InsertWithChildrenAsync(aula);
             }
             else
             {
-                return this.connection.UpdateAsync(aula).Result;
+                 this.connection.UpdateWithChildrenAsync(aula);
             }
         }
 

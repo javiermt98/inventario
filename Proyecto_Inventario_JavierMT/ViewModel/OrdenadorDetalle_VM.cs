@@ -36,6 +36,7 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
         {
             
             ordenadorseleccionado.dispositivo = disp;
+            ordenadorseleccionado.dispositivo.id_aula = Provider.auladeldispositivo.Id;
             TaskOrdenador = Provider.daoOrdenadores.AllOrdenadoresAsync();
             listaordenadores = new ObservableCollection<Ordenador_M>();
 

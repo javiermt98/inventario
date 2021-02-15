@@ -16,10 +16,16 @@ namespace Proyecto_Inventario_JavierMT.Model
         public string funcion { get; set; }
         public string sistop { get; set; }
 
+        [Ignore]
+        private bool _activada { get; set; } = false;
+
         [ForeignKey(typeof(Dispositivo))]
         public int Dispositivo { get; set; }
         [OneToOne]
         public Dispositivo dispositivo { get; set; }
+
+        [Ignore]
+        public bool activada { get { return _activada; } set { _activada = value; OnPropertyChanged(); } }
 
 
     }

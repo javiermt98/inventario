@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Proyecto_Inventario_JavierMT.ViewModel;
+using Proyecto_Inventario_JavierMT.Model;
 
 namespace Proyecto_Inventario_JavierMT.View
 {
@@ -14,6 +15,7 @@ namespace Proyecto_Inventario_JavierMT.View
     public partial class ListaOrdenador_V : ContentPage
     {
         private ListaOrdenador_VM vm;
+        private Ordenador_M ordenadoranterior;
 
         public ListaOrdenador_V()
         {
@@ -29,15 +31,21 @@ namespace Proyecto_Inventario_JavierMT.View
             if (e.Item == null)
                 return;
 
-            await DisplayAlert("Item Tapped", "An item was tapped.", "OK");
+            if (ordenadoranterior != null)
+            {
 
+                ordenadoranterior.activada = false;
+            }
+
+            ordenadoranterior = vm.PcSeleccionado;
+            vm.PcSeleccionado.activada = true;
             //Deselect Item
             ((ListView)sender).SelectedItem = null;
         }
 
         private void Editar(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new OrdenadorDetalle_V(vm.PcSeleccionado));
         }
 
         private void Borrar(object sender, EventArgs e)
@@ -47,7 +55,7 @@ namespace Proyecto_Inventario_JavierMT.View
 
         private void Add(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new OrdenadorDetalle_V());
+            Navigation.PushAsync(new OrdenadorDetalle_V(new Ordenador_M()));
         }
     }
 }

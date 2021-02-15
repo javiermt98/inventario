@@ -10,7 +10,8 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
 {
     class ListaOrdenador_VM : NotifyPropertyBase
     {
-        public ListaOrdenador_VM PcSeleccionado { get; set; }
+        private Ordenador_M _PcSeleccionado { get; set; }
+        public Ordenador_M PcSeleccionado { get { return _PcSeleccionado; }set { _PcSeleccionado = value; OnPropertyChanged(); } }
 
         private ObservableCollection<Ordenador_M> _listaordenadores { get; set; }
 

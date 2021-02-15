@@ -8,6 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Proyecto_Inventario_JavierMT.ViewModel;
 using Proyecto_Inventario_JavierMT.Model;
+using Proyecto_Inventario_JavierMT.Helpers;
 
 namespace Proyecto_Inventario_JavierMT.View
 {
@@ -70,6 +71,7 @@ namespace Proyecto_Inventario_JavierMT.View
         private void Editar(object sender, EventArgs e)
         {
             Navigation.PushAsync(new ListaDispositivos_V());
+            Provider.auladeldispositivo = vm.AulaSeleccionada;
         }
     }
 }

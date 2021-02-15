@@ -4,12 +4,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:views="clr-namespace:Proyecto_Inventario_JavierMT.View"
              x:Class="Proyecto_Inventario_JavierMT.View.ListaDispositivos_V">
-    <TabbedPage.Children>
+    <!--<TabbedPage.Children>
         <NavigationPage Title="Ordenadores" Icon="">
             <x:Arguments>
                 <views:ListaOrdenador_V />
             </x:Arguments>
         </NavigationPage>
-    </TabbedPage.Children>
+    </TabbedPage.Children>-->
 </TabbedPage>
 

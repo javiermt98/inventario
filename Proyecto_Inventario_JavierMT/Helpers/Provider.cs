@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Proyecto_Inventario_JavierMT.Dao;
 using Proyecto_Inventario_JavierMT.DataBase;
+using Proyecto_Inventario_JavierMT.Model;
 
 namespace Proyecto_Inventario_JavierMT.Helpers
 {
@@ -45,5 +46,7 @@ namespace Proyecto_Inventario_JavierMT.Helpers
             "DUAL (Windows No Activado / Linux)",
             "DUAL (Linux / Lliurex)"
         };
+
+        public static Aula_M auladeldispositivo { get; set; }
     }
 }
