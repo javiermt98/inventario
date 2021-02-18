@@ -48,8 +48,13 @@ namespace Proyecto_Inventario_JavierMT.View
             Navigation.PushAsync(new OrdenadorDetalle_V(vm.PcSeleccionado));
         }
 
-        private void Borrar(object sender, EventArgs e)
+        private async void Borrar(object sender, EventArgs e)
         {
+            bool answer = await DisplayAlert("Borrar", "Esta seguro de que quiere borrar", "Si", "No");
+            if (answer)
+            {
+                vm.BorrarVM();
+            }
 
         }
 

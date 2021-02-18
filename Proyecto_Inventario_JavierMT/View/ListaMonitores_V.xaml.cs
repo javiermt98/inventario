@@ -44,8 +44,13 @@ namespace Proyecto_Inventario_JavierMT.View
             //((ListView)sender).SelectedItem = null;
         }
 
-        private void Borrar(object sender, EventArgs e)
+        private async void Borrar(object sender, EventArgs e)
         {
+            bool answer = await DisplayAlert("Borrar", "Esta seguro de que quiere borrar", "Si", "No");
+            if (answer)
+            {
+                vm.BorrarVM();
+            }
 
         }
 

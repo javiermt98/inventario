@@ -22,6 +22,7 @@ namespace Proyecto_Inventario_JavierMT.View
         {
             vm = new RouterDetalle_VM {routerseleccionado = router };
             BindingContext = vm;
+            tipo.SelectedIndex = 0;
             InitializeComponent();
 
 
@@ -43,6 +44,7 @@ namespace Proyecto_Inventario_JavierMT.View
 
 
                     vm.routerseleccionado.wifi = wifi.IsChecked;
+                    vm.routerseleccionado.rout_switch = tipo.Items[tipo.SelectedIndex];
 
                     vm.AddVM();
                     DisplayAlert("ACEPT", "Impresora Registrada", "Aceptar");

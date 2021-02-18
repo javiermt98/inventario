@@ -28,6 +28,7 @@
                                             <RowDefinition Height="30"/>
                                             <RowDefinition Height="30"/>
                                             <RowDefinition Height="30"/>
+                                            <RowDefinition Height="30"/>
 
                                         </Grid.RowDefinitions>
                                         <Grid.ColumnDefinitions>
@@ -42,8 +43,10 @@
                                         <Entry Text="{Binding num_puertos}" Grid.Column="1" Grid.Row="1" IsReadOnly="True" />
                                         <Label Text="Marca" Grid.Column="0" Grid.Row="2"/>
                                         <Entry Text="{Binding velocidad}" Grid.Column="1" Grid.Row="2" IsReadOnly="True" />
-                                        <Label Text="Wifi" Grid.Column="0" Grid.Row="3"/>
-                                        <Entry Text="{Binding wifi}" Grid.Column="1" Grid.Row="3"/>
+                                        <Label Text="Tipo" Grid.Column="0" Grid.Row="3"/>
+                                        <Entry Text="{Binding rout_switch}" Grid.Column="1" Grid.Row="3"/>
+                                        <Label Text="Wifi" Grid.Column="0" Grid.Row="4"/>
+                                        <Entry Text="{Binding wifi}" Grid.Column="1" Grid.Row="4"/>
                                         <ImageButton Source="{OnPlatform UWP='Assets/borrar.png', Android='borrar.png'}" Grid.Row="1" Grid.Column="3"
                                         Clicked="Borrar"  Grid.RowSpan="2" IsVisible="{Binding activada}"/>
                                         <ImageButton Source="{OnPlatform UWP='Assets/edit.png', Android='edit.png'}" Grid.Row="1" Grid.Column="4"

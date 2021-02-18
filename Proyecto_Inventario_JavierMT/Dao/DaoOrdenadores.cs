@@ -37,5 +37,10 @@ namespace Proyecto_Inventario_JavierMT.Dao
                 this.connection.UpdateWithChildrenAsync(ordenador);
             }
         }
+        public int Borrar(Ordenador_M ordenador)
+        {
+            return this.connection.DeleteAsync(ordenador).Result;
+
+        }
     }
 }

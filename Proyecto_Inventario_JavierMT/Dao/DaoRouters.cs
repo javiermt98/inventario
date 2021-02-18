@@ -37,5 +37,10 @@ namespace Proyecto_Inventario_JavierMT.Dao
                 this.connection.UpdateWithChildrenAsync(router);
             }
         }
+        public int Borrar(Router_M router)
+        {
+            return this.connection.DeleteAsync(router).Result;
+
+        }
     }
 }

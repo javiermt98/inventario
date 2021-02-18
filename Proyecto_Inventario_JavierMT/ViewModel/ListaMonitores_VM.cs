@@ -32,5 +32,12 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
             OnPropertyChanged();
 
         }
+        public void BorrarVM()
+        {
+
+            listamonitores.Remove(MonitorSeleccionado);
+            Provider.daoMonitores.Borrar(MonitorSeleccionado);
+            OnPropertyChanged("listamonitores");
+        }
     }
 }

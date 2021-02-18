@@ -17,6 +17,8 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
         private ObservableCollection<Router_M> _listarouters { get; set; }
 
         public ObservableCollection<Router_M> listarouters { get { return _listarouters; } set { _listarouters = value; OnPropertyChanged(); } }
+        public ObservableCollection<String> listatiposrouter { get; set; } = new ObservableCollection<string>(Provider.listatiposrouter);
+
 
         public Task<List<Router_M>> TaskRouters { get; set; }
 

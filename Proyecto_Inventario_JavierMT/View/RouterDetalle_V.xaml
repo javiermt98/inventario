@@ -16,6 +16,11 @@
         <Entry Placeholder="Numero de puertos" Text="{Binding routerseleccionado.num_puertos}"/>
         <Label Text="Velocidad de Red"/>
         <Entry Placeholder="Velocidad de Red (Gbps)" Text="{Binding routerseleccionado.velocidad}"/>
+        <Picker x:Name="tipo"
+                Title="Tipo"
+                TitleColor="Black"                
+                ItemsSource="{Binding listatiposrouter}" 
+               />
         <Label Text="Wifi"/>
         <CheckBox Color="Blue" IsChecked="False" x:Name="wifi"/>
 

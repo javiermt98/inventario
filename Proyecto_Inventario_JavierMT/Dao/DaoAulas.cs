@@ -44,6 +44,7 @@ namespace Proyecto_Inventario_JavierMT.Dao
         public int Borrar(Aula_M aula)
         {
             return this.connection.DeleteAsync(aula).Result;
+            
         }
 
        

@@ -82,6 +82,8 @@ namespace Proyecto_Inventario_JavierMT.Helpers
         public static Aula_M auladeldispositivo { get; set; }
 
         public static List<String> listatiposimpresora { get; set; } = new List<String> { "Laser", "Tinta" };
+        public static List<String> listatiposrouter { get; set; } = new List<String> { "Router", "Switch" };
+
 
     }
 }

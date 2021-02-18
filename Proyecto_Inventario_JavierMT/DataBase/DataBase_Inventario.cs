@@ -27,7 +27,6 @@ namespace Proyecto_Inventario_JavierMT.DataBase
             ConectionDatabase.CreateTableAsync<Monitor_M>();
             ConectionDatabase.CreateTableAsync<Ordenador_M>();
             ConectionDatabase.CreateTableAsync<Router_M>();
-            ConectionDatabase.CreateTableAsync<Switch_M>();
 
         }
     }

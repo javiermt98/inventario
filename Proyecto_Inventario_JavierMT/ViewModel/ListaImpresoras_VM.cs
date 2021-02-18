@@ -27,6 +27,14 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
 
         }
 
+        public void BorrarVM()
+        {
+
+            listaimpresoras.Remove(ImpresoraSeleccionada);
+            Provider.daoImpresoras.Borrar(ImpresoraSeleccionada);
+            OnPropertyChanged("listaimpresoras");
+        }
+
         internal void Recargar()
         {
             TaskImpresoras = Provider.daoImpresoras.AllImpresorasAsync();

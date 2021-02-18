@@ -37,5 +37,10 @@ namespace Proyecto_Inventario_JavierMT.Dao
                 this.connection.UpdateWithChildrenAsync(impresora);
             }
         }
+        public int Borrar(Impresora_M impresora)
+        {
+            return this.connection.DeleteAsync(impresora).Result;
+
+        }
     }
 }

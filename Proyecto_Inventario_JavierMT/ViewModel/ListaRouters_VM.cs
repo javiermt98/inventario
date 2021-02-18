@@ -23,6 +23,13 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
             listarouters = new ObservableCollection<Router_M>(TaskRouters.Result);
             OnPropertyChanged();
         }
+        public void BorrarVM()
+        {
+
+            listarouters.Remove(RouterSeleccionado);
+            Provider.daoRouters.Borrar(RouterSeleccionado);
+            OnPropertyChanged("listarouters");
+        }
 
         internal void Recargar()
         {

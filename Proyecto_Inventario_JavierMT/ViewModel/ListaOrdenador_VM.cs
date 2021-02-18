@@ -27,6 +27,14 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
 
         }
 
+        public void BorrarVM()
+        {
+
+            listaordenadores.Remove(PcSeleccionado);
+            Provider.daoOrdenadores.Borrar(PcSeleccionado);
+            OnPropertyChanged("listaordenadores");
+        }
+
         internal void Recargar()
         {
             TaskOrdenador = Provider.daoOrdenadores.AllOrdenadoresAsync();

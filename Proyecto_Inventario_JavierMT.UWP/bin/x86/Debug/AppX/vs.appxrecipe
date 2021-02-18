@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-02-18T17:39:10.820</Modified>
+      <Modified>2021-02-18T18:00:51.721</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\Proyecto_Inventario_JavierMT.UWP.exe">
       <PackagePath>entrypoint\Proyecto_Inventario_JavierMT.UWP.exe</PackagePath>
-      <Modified>2021-02-18T17:39:09.832</Modified>
+      <Modified>2021-02-18T18:00:49.552</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\javie\.nuget\packages\newtonsoft.json\9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -108,7 +108,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT\bin\Debug\netstandard2.0\Proyecto_Inventario_JavierMT.dll">
       <PackagePath>Proyecto_Inventario_JavierMT.dll</PackagePath>
-      <Modified>2021-02-18T17:43:05.314</Modified>
+      <Modified>2021-02-18T18:00:44.066</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\javie\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -291,11 +291,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-02-18T17:39:09.728</Modified>
+      <Modified>2021-02-18T18:00:49.396</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-02-18T17:39:09.728</Modified>
+      <Modified>2021-02-18T18:00:49.396</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -311,11 +311,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-02-18T14:09:42.882</Modified>
+      <Modified>2021-02-18T18:00:49.972</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\Core\Proyecto_Inventario_JavierMT.UWP.exe">
       <PackagePath>Proyecto_Inventario_JavierMT.UWP.exe</PackagePath>
-      <Modified>2021-02-18T17:39:10.816</Modified>
+      <Modified>2021-02-18T18:00:51.717</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
