@@ -15,6 +15,9 @@ namespace Proyecto_Inventario_JavierMT.Model
         public string tipo { get; set; }
         public bool escaner { get; set; }
         public bool color { get; set; }
+        private bool _activada { get; set; } = false;
+        [Ignore]
+        public bool activada { get { return _activada; } set { _activada = value; OnPropertyChanged(); } }
 
         [ForeignKey(typeof(Dispositivo))]
         public int Dispositivo { get; set; }

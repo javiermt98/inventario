@@ -19,6 +19,8 @@ namespace Proyecto_Inventario_JavierMT.Droid
 
             base.OnCreate(savedInstanceState);
 
+            Plugin.Media.CrossMedia.Current.Initialize(this, savedInstanceState);
+
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

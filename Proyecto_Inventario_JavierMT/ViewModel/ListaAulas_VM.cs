@@ -34,6 +34,12 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
             OnPropertyChanged("aulaslist");
         }
 
-
+        internal void Recargar()
+        {
+            AulaSeleccionada = new Aula_M();
+            Task<List<Aula_M>> TaskAulas = Provider.daoAulas.AllAulasAsync();
+            aulaslist = new ObservableCollection<Aula_M>(TaskAulas.Result);
+            OnPropertyChanged("aulaslist");
+        }
     }
 }

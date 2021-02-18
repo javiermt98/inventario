@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_Inventario_JavierMT.View.ImpresoraDetalle_V">
+    <ContentPage.Content>
+
+        <StackLayout Margin="20" Padding="15">
+
+            <Label Text="Nombre" />
+            <Entry x:Name="nombre" Placeholder="Nombre del dispositivo" Text="{Binding disp.nombre}"/>
+            <Label Text="Número de Factura" />
+            <Entry x:Name="factura" Placeholder="Número de Factura del dispositivo" Text="{Binding disp.num_factura}" />
+            <Label Text="Fecha de Compra "/>
+            <DatePicker x:Name="fechacompra" Margin="10" Date="{Binding disp.fecha_factura}" />
+            <Label x:Name="descripcion" Text="Descripción"/>
+            <Entry Placeholder="Descripción del dispositivo" HeightRequest="100" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" Text="{Binding disp.descripcion}" />
+            <Picker x:Name="tipo"
+                Title="Tipo"
+                TitleColor="Black"                
+                ItemsSource="{Binding listatiposimpresoras}" 
+               />
+            <Label Text="Escaner"/>
+            <CheckBox IsChecked="False" Color="Blue" x:Name="escaner"/>
+            <Label Text="Color"/>
+            <CheckBox IsChecked="False" Color="Blue" x:Name="color"/>
+
+            <Button Text="Guardar Ordenador" Clicked="Guardar" Margin="20" Padding="5" BackgroundColor="Blue" TextColor="White"/>
+
+
+        </StackLayout>
+
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ecvbgiNnGNTWzebfDLXEe5f81ypQAmmdeNZIEI7SHSTtwDjU1Zsap1sDJCnHMsBdfh54AlmWilNfXBNsy8Iiww==",
+  "dgSpecHash": "Bp7D2GvNmvOOasVik1X2EcbvDo/Vt9y2Z5X0sQ8NO7z324AmiDkSfGLJpmwRIQdVe/Bk75J0apWURnoxvAOthg==",
   "success": true,
   "projectFilePath": "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.Android\\Proyecto_Inventario_JavierMT.Android.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\javie\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\javie\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\javie\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\javie\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\javie\\.nuget\\packages\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
     "C:\\Users\\javie\\.nuget\\packages\\xamarin.androidx.annotation\\1.1.0.8\\xamarin.androidx.annotation.1.1.0.8.nupkg.sha512",
     "C:\\Users\\javie\\.nuget\\packages\\xamarin.androidx.appcompat\\1.2.0.5\\xamarin.androidx.appcompat.1.2.0.5.nupkg.sha512",

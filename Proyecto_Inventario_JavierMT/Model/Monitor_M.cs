@@ -15,6 +15,9 @@ namespace Proyecto_Inventario_JavierMT.Model
         public int id_monitor { get; set; }
         public double pulgadas { get; set; }
         public string marca { get; set; }
+        private bool _activada { get; set; } = false;
+        [Ignore]
+        public bool activada { get { return _activada; } set { _activada = value; OnPropertyChanged(); } }
 
         [ForeignKey(typeof(Dispositivo))]
         public int Dispositivo { get; set; }

@@ -66,5 +66,7 @@ namespace Proyecto_Inventario_JavierMT.View
 
 
         }
+
+
     }
 }

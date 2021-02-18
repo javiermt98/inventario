@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RB4F0E8TiX8Ec1PnfpOKUon0YD8Clz80QVfhXOg/VmpcC8znlGLIgRWpeCjY1RhSwHZWUN/CWmRIRvxdwuH9xg==",
+  "dgSpecHash": "srCuDUoqkK3CfJCAf1k0BH+oqyVrfXUEP1L7tIfVsXxhRNelp0SJNLjTJYa3iTjJW3yp9BdCnJee6UG8kHJAOg==",
   "success": true,
   "projectFilePath": "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.UWP\\Proyecto_Inventario_JavierMT.UWP.csproj",
   "expectedPackageFiles": [
@@ -39,6 +39,7 @@
     "C:\\Users\\javie\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\javie\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\javie\\.nuget\\packages\\win2d.uwp\\1.20.0\\win2d.uwp.1.20.0.nupkg.sha512",
+    "C:\\Users\\javie\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\javie\\.nuget\\packages\\xamarin.essentials\\1.6.0\\xamarin.essentials.1.6.0.nupkg.sha512",
     "C:\\Users\\javie\\.nuget\\packages\\xamarin.forms\\5.0.0.1905\\xamarin.forms.5.0.0.1905.nupkg.sha512"
   ],

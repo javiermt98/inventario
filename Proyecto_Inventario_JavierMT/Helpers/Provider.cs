@@ -31,6 +31,16 @@ namespace Proyecto_Inventario_JavierMT.Helpers
                 return _daoOrdenadores;
             }
         }
+        private static DaoImpresoras _daoImpresoras;
+
+        public static DaoImpresoras daoImpresoras
+        {
+            get
+            {
+                if (_daoImpresoras == null) _daoImpresoras = new DaoImpresoras(DataBase_Inventario.ConectionDatabase);
+                return _daoImpresoras;
+            }
+        }
 
         public static List<String> listatipos { get; set; } = new List<String> { "Sobremesa", "Portatil" };
         public static List<String> listafuncion { get; set; } = new List<String> { "Servidor de Aula", "Cliente" };
@@ -48,5 +58,8 @@ namespace Proyecto_Inventario_JavierMT.Helpers
         };
 
         public static Aula_M auladeldispositivo { get; set; }
+
+        public static List<String> listatiposimpresora { get; set; } = new List<String> { "Laser", "Tinta" };
+
     }
 }

@@ -73,5 +73,11 @@ namespace Proyecto_Inventario_JavierMT.View
             Navigation.PushAsync(new ListaDispositivos_V());
             Provider.auladeldispositivo = vm.AulaSeleccionada;
         }
+
+        protected override void OnAppearing()
+        {
+            vm.Recargar();
+            base.OnAppearing();
+        }
     }
 }

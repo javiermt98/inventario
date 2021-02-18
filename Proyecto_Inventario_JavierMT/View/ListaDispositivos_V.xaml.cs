@@ -22,6 +22,7 @@ namespace Proyecto_Inventario_JavierMT.View
             vm = new ListaDispositivos_VM();
             InitializeComponent();
             Children.Add(new ListaOrdenador_V());
+            Children.Add(new ListaImpresoras_V());
 
         }
 

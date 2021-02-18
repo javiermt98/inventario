@@ -735,6 +735,18 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "Xam.Plugin.Media/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Essentials": "1.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Essentials/1.6.0": {
         "type": "package",
         "dependencies": {
@@ -3284,6 +3296,46 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "Xam.Plugin.Media/5.0.1": {
+      "sha512": "UUR31EEnhDVa4IXgVfQIAL3u9v6YAyppsb5UlO9MNJ4quGGkfcWX++JexjB1nMGqvCzsjAT2t32drKDIXoW4SQ==",
+      "type": "package",
+      "path": "xam.plugin.media/5.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/Plugin.Media.dll",
+        "lib/monoandroid10.0/Plugin.Media.pdb",
+        "lib/monoandroid10.0/Plugin.Media.xml",
+        "lib/monoandroid80/Plugin.Media.dll",
+        "lib/monoandroid80/Plugin.Media.pdb",
+        "lib/monoandroid80/Plugin.Media.xml",
+        "lib/monoandroid81/Plugin.Media.dll",
+        "lib/monoandroid81/Plugin.Media.pdb",
+        "lib/monoandroid81/Plugin.Media.xml",
+        "lib/monoandroid90/Plugin.Media.dll",
+        "lib/monoandroid90/Plugin.Media.pdb",
+        "lib/monoandroid90/Plugin.Media.xml",
+        "lib/netstandard1.0/Plugin.Media.dll",
+        "lib/netstandard1.0/Plugin.Media.pdb",
+        "lib/netstandard1.0/Plugin.Media.xml",
+        "lib/netstandard2.0/Plugin.Media.dll",
+        "lib/netstandard2.0/Plugin.Media.pdb",
+        "lib/netstandard2.0/Plugin.Media.xml",
+        "lib/tizen40/Plugin.Media.dll",
+        "lib/tizen40/Plugin.Media.pdb",
+        "lib/tizen40/Plugin.Media.xml",
+        "lib/uap10.0.16299/Plugin.Media.dll",
+        "lib/uap10.0.16299/Plugin.Media.pdb",
+        "lib/uap10.0.16299/Plugin.Media.pri",
+        "lib/uap10.0.16299/Plugin.Media.xml",
+        "lib/xamarinios10/Plugin.Media.dll",
+        "lib/xamarinios10/Plugin.Media.pdb",
+        "lib/xamarinios10/Plugin.Media.xml",
+        "readme.txt",
+        "xam.plugin.media.5.0.1.nupkg.sha512",
+        "xam.plugin.media.nuspec"
+      ]
+    },
     "Xamarin.Essentials/1.6.0": {
       "sha512": "geJYnjTyPv2npClIkBxLXk9cOV9CPwj/oayA8I4+6NpZc/dIiYxax36m25SW8TrCMR/rvyY44fZBjWBvj7BCQQ==",
       "type": "package",
@@ -3556,31 +3608,30 @@
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
       "SQLiteNetExtensions.Async >= 2.1.0",
+      "Xam.Plugin.Media >= 5.0.1",
       "Xamarin.Essentials >= 1.6.0",
       "Xamarin.Forms >= 5.0.0.1905",
       "sqlite-net-pcl >= 1.7.335"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lliurex\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\javie\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lliurex\\Desktop\\inventario\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj",
+      "projectUniqueName": "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj",
       "projectName": "Proyecto_Inventario_JavierMT",
-      "projectPath": "C:\\Users\\lliurex\\Desktop\\inventario\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj",
-      "packagesPath": "C:\\Users\\lliurex\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lliurex\\Desktop\\inventario\\Proyecto_Inventario_JavierMT\\obj\\",
+      "projectPath": "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj",
+      "packagesPath": "C:\\Users\\javie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\lliurex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\javie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -3615,6 +3666,10 @@
             "target": "Package",
             "version": "[2.1.0, )"
           },
+          "Xam.Plugin.Media": {
+            "target": "Package",
+            "version": "[5.0.1, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.6.0, )"
@@ -3638,7 +3693,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   },

@@ -5,6 +5,7 @@
     <ContentPage.Content>
 
         <StackLayout Margin="20" Padding="15">
+            
             <Label Text="Nombre" />
             <Entry x:Name="nombre" Placeholder="Nombre del dispositivo" Text="{Binding disp.nombre}"/>
             <Label Text="Número de Factura" />
@@ -32,6 +33,10 @@
                 />
             
             <Button Text="Guardar Ordenador" Clicked="Guardar" Margin="20" Padding="5" BackgroundColor="Blue" TextColor="White"/>
+            
+
         </StackLayout>
+        
+
     </ContentPage.Content>
 </ContentPage>

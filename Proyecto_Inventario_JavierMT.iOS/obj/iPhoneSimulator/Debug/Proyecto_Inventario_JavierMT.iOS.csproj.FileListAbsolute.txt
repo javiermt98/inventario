@@ -139,3 +139,5 @@ C:\Users\lliurex\Desktop\inventario\Proyecto_Inventario_JavierMT.iOS\obj\iPhoneS
 C:\Users\lliurex\Desktop\inventario\Proyecto_Inventario_JavierMT.iOS\obj\iPhoneSimulator\Debug\Proyecto_Inventario_JavierMT.iOS.csproj.CopyComplete
 C:\Users\lliurex\Desktop\inventario\Proyecto_Inventario_JavierMT.iOS\obj\iPhoneSimulator\Debug\Proyecto_Inventario_JavierMT.iOS.exe
 C:\Users\lliurex\Desktop\inventario\Proyecto_Inventario_JavierMT.iOS\obj\iPhoneSimulator\Debug\Proyecto_Inventario_JavierMT.iOS.pdb
+C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.iOS\bin\iPhoneSimulator\Debug\Plugin.Media.dll
+C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.iOS\bin\iPhoneSimulator\Debug\Plugin.Media.pdb

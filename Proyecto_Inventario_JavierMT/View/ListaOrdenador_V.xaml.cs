@@ -57,5 +57,11 @@ namespace Proyecto_Inventario_JavierMT.View
         {
             Navigation.PushAsync(new OrdenadorDetalle_V(new Ordenador_M()));
         }
+
+        protected override void OnAppearing()
+        {
+            vm.Recargar();
+            base.OnAppearing();
+        }
     }
 }

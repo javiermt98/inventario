@@ -27,5 +27,12 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
 
         }
 
+        internal void Recargar()
+        {
+            TaskOrdenador = Provider.daoOrdenadores.AllOrdenadoresAsync();
+            listaordenadores = new ObservableCollection<Ordenador_M>(TaskOrdenador.Result);
+            OnPropertyChanged();
+
+        }
     }
 }
