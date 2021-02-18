@@ -17,19 +17,22 @@
             <Picker x:Name="tipo"
                 Title="Tipo"
                 TitleColor="Black"                
-                ItemsSource="{Binding listatipos}" 
+                ItemsSource="{Binding listatipos}"
+                SelectedItem="{Binding ordenadorseleccionado.tipo}"
                />
             
             <Picker x:Name="funcion"
                 Title="Función"
                 TitleColor="Black"
-                ItemsSource="{Binding listafuncion}" 
+                ItemsSource="{Binding listafuncion}"
+                SelectedItem="{Binding ordenadorseleccionado.funcion}"
                />
             
             <Picker x:Name="sistop"
                 Title="Sistema Operativo"
                 TitleColor="Black" 
                 ItemsSource="{Binding listasistop}" 
+                SelectedItem="{Binding ordenadorseleccionado.sistop}"
                 />
             
             <Button Text="Guardar Ordenador" Clicked="Guardar" Margin="20" Padding="5" BackgroundColor="Blue" TextColor="White"/>

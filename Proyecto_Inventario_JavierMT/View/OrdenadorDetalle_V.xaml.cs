@@ -20,9 +20,7 @@ namespace Proyecto_Inventario_JavierMT.View
             InitializeComponent();
             vm = new OrdenadorDetalle_VM{ordenadorseleccionado = ordenador, disp = dispositivo };
             BindingContext = vm;
-            tipo.SelectedIndex = 0;
-            funcion.SelectedIndex = 0;
-            sistop.SelectedIndex = 0;
+
 
 
         }
@@ -41,12 +39,6 @@ namespace Proyecto_Inventario_JavierMT.View
                 
                 if (vm.ComprobarPc())
                 {
-                    String f = funcion.Items[funcion.SelectedIndex];
-                    String t = tipo.Items[tipo.SelectedIndex];
-                    String s = sistop.Items[sistop.SelectedIndex];
-                    vm.ordenadorseleccionado.funcion = f;
-                    vm.ordenadorseleccionado.tipo = t;
-                    vm.ordenadorseleccionado.sistop = s;
                     
 
                     vm.AddVM();

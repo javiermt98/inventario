@@ -20,6 +20,7 @@
                 Title="Tipo"
                 TitleColor="Black"                
                 ItemsSource="{Binding listatiposrouter}" 
+                SelectedItem="{Binding routerseleccionado.rout_switch}"
                />
         <Label Text="Wifi"/>
         <CheckBox Color="Blue" IsChecked="{Binding routerseleccionado.wifi}" x:Name="wifi"/>

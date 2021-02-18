@@ -23,7 +23,6 @@ namespace Proyecto_Inventario_JavierMT.View
             InitializeComponent();
             vm = new RouterDetalle_VM {routerseleccionado = router, disp = dispositivo };
             BindingContext = vm;
-            tipo.SelectedIndex = 0;
             
 
 
@@ -44,7 +43,6 @@ namespace Proyecto_Inventario_JavierMT.View
                 {
 
 
-                    vm.routerseleccionado.rout_switch = tipo.Items[tipo.SelectedIndex];
 
                     vm.AddVM();
                     DisplayAlert("ACEPT", "Impresora Registrada", "Aceptar");
