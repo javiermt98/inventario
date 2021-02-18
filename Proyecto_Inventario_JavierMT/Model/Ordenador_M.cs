@@ -21,7 +21,7 @@ namespace Proyecto_Inventario_JavierMT.Model
 
         [ForeignKey(typeof(Dispositivo))]
         public int Dispositivo { get; set; }
-        [OneToOne]
+        [OneToOne(CascadeOperations = CascadeOperation.All)]
         public Dispositivo dispositivo { get; set; }
 
         [Ignore]

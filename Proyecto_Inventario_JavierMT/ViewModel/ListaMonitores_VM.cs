@@ -16,19 +16,19 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
         private ObservableCollection<Monitor_M> _listamonitores { get; set; }
 
         public ObservableCollection<Monitor_M> listamonitores { get { return _listamonitores; } set { _listamonitores = value; OnPropertyChanged(); } }
-        public Task<List<Monitor_M>> TaskMonitores { get; set; }
+        public List<Monitor_M> TaskMonitores { get; set; }
 
         public ListaMonitores_VM() {
 
             TaskMonitores = Provider.daoMonitores.AllMonitoresAsync();
-            listamonitores = new ObservableCollection<Monitor_M>(TaskMonitores.Result);
+            listamonitores = new ObservableCollection<Monitor_M>(TaskMonitores);
             OnPropertyChanged();
 
         }
         internal void Recargar()
         {
             TaskMonitores = Provider.daoMonitores.AllMonitoresAsync();
-            listamonitores = new ObservableCollection<Monitor_M>(TaskMonitores.Result);
+            listamonitores = new ObservableCollection<Monitor_M>(TaskMonitores);
             OnPropertyChanged();
 
         }

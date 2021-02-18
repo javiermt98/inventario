@@ -18,7 +18,7 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
 
         public ObservableCollection<Monitor_M> listamonitores { get { return _listamonitores; } set { _listamonitores = value; OnPropertyChanged(); } }
 
-        public Task<List<Monitor_M>> TaskMonitores { get; set; }
+        public List<Monitor_M> TaskMonitores { get; set; }
 
         public MonitorDetalle_VM() {
             disp = new Dispositivo();

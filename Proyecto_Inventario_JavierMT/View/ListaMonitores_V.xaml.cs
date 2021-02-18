@@ -56,12 +56,12 @@ namespace Proyecto_Inventario_JavierMT.View
 
         private void Editar(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new MonitorDetalle_V(vm.MonitorSeleccionado));
+            Navigation.PushAsync(new MonitorDetalle_V(monitoranterior, monitoranterior.dispositivo));
         }
 
         private void Add(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new MonitorDetalle_V(new Monitor_M()));
+            Navigation.PushAsync(new MonitorDetalle_V(new Monitor_M(), new Dispositivo()));
         }
 
         protected override void OnAppearing()

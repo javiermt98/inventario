@@ -55,12 +55,12 @@ namespace Proyecto_Inventario_JavierMT.View
 
         private void Editar(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new RouterDetalle_V(vm.RouterSeleccionado));
+            Navigation.PushAsync(new RouterDetalle_V(routeranterior, routeranterior.dispositivo));
         }
 
         private void Add(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new RouterDetalle_V(new Router_M()));
+            Navigation.PushAsync(new RouterDetalle_V(new Router_M(), new Dispositivo()));
         }
         protected override void OnAppearing()
         {

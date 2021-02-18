@@ -20,9 +20,9 @@
                 ItemsSource="{Binding listatiposimpresoras}" 
                />
             <Label Text="Escaner"/>
-            <CheckBox IsChecked="False" Color="Blue" x:Name="escaner"/>
+            <CheckBox IsChecked="{Binding impresoraseleccionada.escaner}" Color="Blue" x:Name="escaner"/>
             <Label Text="Color"/>
-            <CheckBox IsChecked="False" Color="Blue" x:Name="color"/>
+            <CheckBox IsChecked="{Binding impresoraseleccionada.color}" Color="Blue" x:Name="color" />
 
             <Button Text="Guardar Impresora" Clicked="Guardar" Margin="20" Padding="5" BackgroundColor="Blue" TextColor="White"/>
 

@@ -20,7 +20,7 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
 
     public ObservableCollection<String> listatiposimpresoras { get; set; } = new ObservableCollection<string>(Provider.listatiposimpresora);
 
-    public Task<List<Impresora_M>> TaskImpresoras { get; set; }
+    public List<Impresora_M> TaskImpresoras { get; set; }
 
         public ImpresoraDetalle_VM()
         {

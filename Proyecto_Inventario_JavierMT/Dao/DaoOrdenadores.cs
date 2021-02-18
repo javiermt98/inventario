@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Proyecto_Inventario_JavierMT.Model;
+using Proyecto_Inventario_JavierMT.Helpers;
 using SQLiteNetExtensions.Exceptions;
 
 using SQLite;
@@ -18,9 +19,17 @@ namespace Proyecto_Inventario_JavierMT.Dao
         {
             this.connection = connection;
         }
-        internal Task<List<Ordenador_M>> AllOrdenadoresAsync()
+        internal List<Ordenador_M> AllOrdenadoresAsync()
         {
-            return this.connection.Table<Ordenador_M>().ToListAsync();
+            List<Ordenador_M> ordRelleno = new List<Ordenador_M>();
+            List<Ordenador_M> ordenadores = this.connection.QueryAsync<Ordenador_M>("Select o.* from Ordenador o,Dispositivos d where o.Dispositivo = d.id_dispositivo and d.id_aula = " + Provider.auladeldispositivo.Id).Result;
+            foreach (Ordenador_M ord in ordenadores)
+            {
+                Ordenador_M pc = new Ordenador_M();
+                pc = this.connection.GetWithChildrenAsync<Ordenador_M>(ord.id_ordenador).Result;
+                ordRelleno.Add(pc);
+            }
+            return ordRelleno;
         }
 
         public void InsertOrdenadores(Ordenador_M ordenador)
@@ -37,9 +46,10 @@ namespace Proyecto_Inventario_JavierMT.Dao
                 this.connection.UpdateWithChildrenAsync(ordenador);
             }
         }
-        public int Borrar(Ordenador_M ordenador)
+        public void Borrar(Ordenador_M ordenador)
         {
-            return this.connection.DeleteAsync(ordenador).Result;
+            this.connection.DeleteAsync(ordenador.dispositivo);
+            this.connection.DeleteAsync(ordenador);
 
         }
     }

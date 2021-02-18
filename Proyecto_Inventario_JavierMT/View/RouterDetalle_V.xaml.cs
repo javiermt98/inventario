@@ -18,12 +18,13 @@ namespace Proyecto_Inventario_JavierMT.View
     {
         private RouterDetalle_VM vm;
 
-        public RouterDetalle_V(Router_M router)
+        public RouterDetalle_V(Router_M router, Dispositivo dispositivo)
         {
-            vm = new RouterDetalle_VM {routerseleccionado = router };
+            InitializeComponent();
+            vm = new RouterDetalle_VM {routerseleccionado = router, disp = dispositivo };
             BindingContext = vm;
             tipo.SelectedIndex = 0;
-            InitializeComponent();
+            
 
 
         }
@@ -43,7 +44,6 @@ namespace Proyecto_Inventario_JavierMT.View
                 {
 
 
-                    vm.routerseleccionado.wifi = wifi.IsChecked;
                     vm.routerseleccionado.rout_switch = tipo.Items[tipo.SelectedIndex];
 
                     vm.AddVM();

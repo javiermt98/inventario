@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Proyecto_Inventario_JavierMT.Model;
+using Proyecto_Inventario_JavierMT.Helpers;
+
 using SQLiteNetExtensions.Exceptions;
 
 using SQLite;
@@ -18,10 +20,22 @@ namespace Proyecto_Inventario_JavierMT.Dao
         {
             this.connection = connection;
         }
-        internal Task<List<Impresora_M>> AllImpresorasAsync()
+        internal List<Impresora_M> AllImpresorasAsync()
         {
-            return this.connection.Table<Impresora_M>().ToListAsync();
+            List<Impresora_M> impRelleno = new List<Impresora_M>();
+            List<Impresora_M> impresoras = this.connection.QueryAsync<Impresora_M>("Select i.* from Impresora i,Dispositivos d where i.Dispositivo = d.id_dispositivo and d.id_aula = " + Provider.auladeldispositivo.Id).Result;
+            foreach (Impresora_M m in impresoras)
+            {
+                Impresora_M mon = new Impresora_M();
+                mon = this.connection.GetWithChildrenAsync<Impresora_M>(m.id_impresora).Result;
+                impRelleno.Add(mon);
+            }
+            return impRelleno;
+
+
         }
+
+
 
         public void InsertImpresroas(Impresora_M impresora)
         {
@@ -37,9 +51,11 @@ namespace Proyecto_Inventario_JavierMT.Dao
                 this.connection.UpdateWithChildrenAsync(impresora);
             }
         }
-        public int Borrar(Impresora_M impresora)
+        public void Borrar(Impresora_M impresora)
         {
-            return this.connection.DeleteAsync(impresora).Result;
+            this.connection.DeleteAsync(impresora.dispositivo);
+            this.connection.DeleteAsync(impresora);
+
 
         }
     }

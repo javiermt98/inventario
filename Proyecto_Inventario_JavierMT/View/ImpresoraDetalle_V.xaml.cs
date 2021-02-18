@@ -15,13 +15,14 @@ namespace Proyecto_Inventario_JavierMT.View
     public partial class ImpresoraDetalle_V : ContentPage
     {
         private ImpresoraDetalle_VM vm;
-        public ImpresoraDetalle_V(Impresora_M impresora)
+        public ImpresoraDetalle_V(Impresora_M impresora, Dispositivo dispositivo)
         {
             InitializeComponent();
 
-            vm = new ImpresoraDetalle_VM { impresoraseleccionada = impresora };
+            vm = new ImpresoraDetalle_VM { impresoraseleccionada = impresora, disp = dispositivo };
             BindingContext = vm;
             tipo.SelectedIndex = 0;
+            
 
         }
 
@@ -39,8 +40,7 @@ namespace Proyecto_Inventario_JavierMT.View
                 if (vm.ComprobarImpresora())
                 {
                     vm.impresoraseleccionada.tipo = tipo.Items[tipo.SelectedIndex];
-                    vm.impresoraseleccionada.color = color.IsChecked;
-                    vm.impresoraseleccionada.escaner = escaner.IsChecked;
+
 
 
 

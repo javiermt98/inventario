@@ -45,7 +45,7 @@ namespace Proyecto_Inventario_JavierMT.View
 
         private void Editar(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new OrdenadorDetalle_V(vm.PcSeleccionado));
+            Navigation.PushAsync(new OrdenadorDetalle_V(ordenadoranterior, ordenadoranterior.dispositivo));
         }
 
         private async void Borrar(object sender, EventArgs e)
@@ -60,7 +60,7 @@ namespace Proyecto_Inventario_JavierMT.View
 
         private void Add(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new OrdenadorDetalle_V(new Ordenador_M()));
+            Navigation.PushAsync(new OrdenadorDetalle_V(new Ordenador_M(), new Dispositivo()));
         }
 
         protected override void OnAppearing()

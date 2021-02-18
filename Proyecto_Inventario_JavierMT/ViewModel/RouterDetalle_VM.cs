@@ -20,7 +20,7 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
         public ObservableCollection<String> listatiposrouter { get; set; } = new ObservableCollection<string>(Provider.listatiposrouter);
 
 
-        public Task<List<Router_M>> TaskRouters { get; set; }
+        public List<Router_M> TaskRouters { get; set; }
 
         public RouterDetalle_VM() {
             disp = new Dispositivo();

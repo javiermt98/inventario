@@ -40,12 +40,12 @@ namespace Proyecto_Inventario_JavierMT.View
             impresoraanterior = vm.ImpresoraSeleccionada;
             vm.ImpresoraSeleccionada.activada = true;
             //Deselect Item
-            ((ListView)sender).SelectedItem = null;
+            //((ListView)sender).SelectedItem = null;
         }
 
         private void Editar(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ImpresoraDetalle_V(vm.ImpresoraSeleccionada));
+            Navigation.PushAsync(new ImpresoraDetalle_V(impresoraanterior, impresoraanterior.dispositivo));
 
         }
 
@@ -61,7 +61,7 @@ namespace Proyecto_Inventario_JavierMT.View
 
         private void Add(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ImpresoraDetalle_V(new Impresora_M()));
+            Navigation.PushAsync(new ImpresoraDetalle_V(new Impresora_M(), new Dispositivo()));
         }
         protected override void OnAppearing()
         {

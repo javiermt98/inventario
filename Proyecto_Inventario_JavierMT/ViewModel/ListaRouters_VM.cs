@@ -16,11 +16,11 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
         private ObservableCollection<Router_M> _listarouters { get; set; }
 
         public ObservableCollection<Router_M> listarouters { get { return _listarouters; } set { _listarouters = value; OnPropertyChanged(); } }
-        public Task<List<Router_M>> TaskRouters { get; set; }
+        public List<Router_M> TaskRouters { get; set; }
 
         public ListaRouters_VM() {
             TaskRouters = Provider.daoRouters.AllRoutersAsync();
-            listarouters = new ObservableCollection<Router_M>(TaskRouters.Result);
+            listarouters = new ObservableCollection<Router_M>(TaskRouters);
             OnPropertyChanged();
         }
         public void BorrarVM()
@@ -34,7 +34,7 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
         internal void Recargar()
         {
             TaskRouters = Provider.daoRouters.AllRoutersAsync();
-            listarouters = new ObservableCollection<Router_M>(TaskRouters.Result);
+            listarouters = new ObservableCollection<Router_M>(TaskRouters);
             OnPropertyChanged();
 
         }

@@ -41,9 +41,9 @@
                                         <Label Text="Tipo" Grid.Column="0" Grid.Row="1"/>
                                         <Entry Text="{Binding tipo}" Grid.Column="1" Grid.Row="1" IsReadOnly="True" />
                                         <Label Text="Función" Grid.Column="0" Grid.Row="2"/>
-                                        <Entry Text="{Binding escaner}" Grid.Column="1" Grid.Row="2" IsReadOnly="True" />
+                                        <Entry Text="{Binding funcion}" Grid.Column="1" Grid.Row="2" IsReadOnly="True" />
                                         <Label Text="Sistema Operativo" Grid.Column="0" Grid.Row="3"/>
-                                        <Entry Text="{Binding color}" Grid.Column="1" Grid.Row="3" IsReadOnly="True" />
+                                        <Entry Text="{Binding sistop}" Grid.Column="1" Grid.Row="3" IsReadOnly="True" />
                                         <ImageButton Source="{OnPlatform UWP='Assets/borrar.png', Android='borrar.png'}" Grid.Row="1" Grid.Column="3"
                                         Clicked="Borrar"  Grid.RowSpan="2" IsVisible="{Binding activada}"/>
                                         <ImageButton Source="{OnPlatform UWP='Assets/edit.png', Android='edit.png'}" Grid.Row="1" Grid.Column="4"

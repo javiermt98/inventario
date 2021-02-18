@@ -16,9 +16,9 @@ namespace Proyecto_Inventario_JavierMT.View
     {
         private MonitorDetalle_VM vm;
          
-        public MonitorDetalle_V(Monitor_M monitor)
+        public MonitorDetalle_V(Monitor_M monitor, Dispositivo dispositivo)
         {
-            vm = new MonitorDetalle_VM { monitorseleccionado = monitor };
+            vm = new MonitorDetalle_VM { monitorseleccionado = monitor, disp = dispositivo };
             BindingContext = vm;
             InitializeComponent();
 

@@ -22,7 +22,7 @@
                 ItemsSource="{Binding listatiposrouter}" 
                />
         <Label Text="Wifi"/>
-        <CheckBox Color="Blue" IsChecked="False" x:Name="wifi"/>
+        <CheckBox Color="Blue" IsChecked="{Binding routerseleccionado.wifi}" x:Name="wifi"/>
 
 
         <Button Text="Guardar Monitor" Clicked="Guardar" Margin="20" Padding="5" BackgroundColor="Blue" TextColor="White"/>

@@ -16,12 +16,12 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
         private ObservableCollection<Impresora_M> _listaimpresoras { get; set; }
 
         public ObservableCollection<Impresora_M> listaimpresoras { get { return _listaimpresoras; } set { _listaimpresoras = value; OnPropertyChanged(); } }
-        public Task<List<Impresora_M>> TaskImpresoras { get; set; }
+        public List<Impresora_M> TaskImpresoras { get; set; }
 
         public ListaImpresoras_VM()
         {
             TaskImpresoras = Provider.daoImpresoras.AllImpresorasAsync();
-            listaimpresoras = new ObservableCollection<Impresora_M>(TaskImpresoras.Result);
+            listaimpresoras = new ObservableCollection<Impresora_M>(TaskImpresoras);
             OnPropertyChanged();
 
 
@@ -38,7 +38,7 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
         internal void Recargar()
         {
             TaskImpresoras = Provider.daoImpresoras.AllImpresorasAsync();
-            listaimpresoras = new ObservableCollection<Impresora_M>(TaskImpresoras.Result);
+            listaimpresoras = new ObservableCollection<Impresora_M>(TaskImpresoras);
             OnPropertyChanged();
 
         }

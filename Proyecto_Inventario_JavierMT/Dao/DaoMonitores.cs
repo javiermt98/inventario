@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Proyecto_Inventario_JavierMT.Model;
+using Proyecto_Inventario_JavierMT.Helpers;
 using SQLiteNetExtensions.Exceptions;
 
 using SQLite;
@@ -18,9 +19,17 @@ namespace Proyecto_Inventario_JavierMT.Dao
         {
             this.connection = connection;
         }
-        internal Task<List<Monitor_M>> AllMonitoresAsync()
+        internal List<Monitor_M> AllMonitoresAsync()
         {
-            return this.connection.Table<Monitor_M>().ToListAsync();
+            List<Monitor_M> monRelleno = new List<Monitor_M>();
+            List<Monitor_M> monitores = this.connection.QueryAsync<Monitor_M>("Select m.* from Monitor m,Dispositivos d where m.Dispositivo = d.id_dispositivo and d.id_aula = " + Provider.auladeldispositivo.Id).Result;
+            foreach (Monitor_M m in monitores)
+            {
+                Monitor_M mon = new Monitor_M();
+                mon = this.connection.GetWithChildrenAsync<Monitor_M>(m.id_monitor).Result;
+                monRelleno.Add(mon);
+            }
+            return monRelleno;
         }
 
         public void InsertMonitor(Monitor_M monitor)
@@ -37,9 +46,11 @@ namespace Proyecto_Inventario_JavierMT.Dao
                 this.connection.UpdateWithChildrenAsync(monitor);
             }
         }
-        public int Borrar(Monitor_M monitor)
+        public void Borrar(Monitor_M monitor)
         {
-            return this.connection.DeleteAsync(monitor).Result;
+            this.connection.DeleteAsync(monitor.dispositivo);
+            this.connection.DeleteAsync(monitor);
+
 
         }
     }

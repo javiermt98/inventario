@@ -70,8 +70,9 @@ namespace Proyecto_Inventario_JavierMT.View
 
         private void Editar(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ListaDispositivos_V());
             Provider.auladeldispositivo = vm.AulaSeleccionada;
+            Navigation.PushAsync(new ListaDispositivos_V());
+            
         }
 
         protected override void OnAppearing()

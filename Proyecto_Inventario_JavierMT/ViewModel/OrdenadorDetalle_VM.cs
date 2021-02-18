@@ -25,11 +25,12 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
 
 
 
-        public Task<List<Ordenador_M>> TaskOrdenador { get; set; }
+        public List<Ordenador_M> TaskOrdenador { get; set; }
         public OrdenadorDetalle_VM() {
 
             disp = new Dispositivo();
             ordenadorseleccionado = new Ordenador_M();
+
         }
 
         internal bool ComprobarPc()

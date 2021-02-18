@@ -15,10 +15,10 @@ namespace Proyecto_Inventario_JavierMT.View
     public partial class OrdenadorDetalle_V : ContentPage
     {
         private OrdenadorDetalle_VM vm;
-        public OrdenadorDetalle_V(Ordenador_M ordenador)
+        public OrdenadorDetalle_V(Ordenador_M ordenador, Dispositivo dispositivo)
         {   
             InitializeComponent();
-            vm = new OrdenadorDetalle_VM{ordenadorseleccionado = ordenador };
+            vm = new OrdenadorDetalle_VM{ordenadorseleccionado = ordenador, disp = dispositivo };
             BindingContext = vm;
             tipo.SelectedIndex = 0;
             funcion.SelectedIndex = 0;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Proyecto_Inventario_JavierMT.Model;
+using Proyecto_Inventario_JavierMT.Helpers;
 using SQLiteNetExtensions.Exceptions;
 
 using SQLite;
@@ -18,15 +19,25 @@ namespace Proyecto_Inventario_JavierMT.Dao
         {
             this.connection = connection;
         }
-        internal Task<List<Router_M>> AllRoutersAsync()
+        internal List<Router_M> AllRoutersAsync()
         {
-            return this.connection.Table<Router_M>().ToListAsync();
+            List<Router_M> routRelleno = new List<Router_M>();
+            List<Router_M> routers = this.connection.QueryAsync<Router_M>("Select r.* from Router r,Dispositivos d where r.Dispositivo = d.id_dispositivo and d.id_aula = " + Provider.auladeldispositivo.Id).Result;
+            foreach (Router_M r in routers)
+            {
+                Router_M rout = new Router_M();
+                rout = this.connection.GetWithChildrenAsync<Router_M>(r.id_router).Result;
+                routRelleno.Add(rout);
+            }
+            return routRelleno;
+
         }
 
         public void InsertRouters(Router_M router)
         {
             if (router.dispositivo.id_dispositivo == 0)
             {
+                
                 this.connection.InsertWithChildrenAsync(router.dispositivo).Wait();
                 this.connection.InsertAsync(router).Wait();
                 this.connection.UpdateWithChildrenAsync(router).Wait();
@@ -37,9 +48,10 @@ namespace Proyecto_Inventario_JavierMT.Dao
                 this.connection.UpdateWithChildrenAsync(router);
             }
         }
-        public int Borrar(Router_M router)
+        public void Borrar(Router_M router)
         {
-            return this.connection.DeleteAsync(router).Result;
+             this.connection.DeleteAsync(router.dispositivo);
+             this.connection.DeleteAsync(router);
 
         }
     }
