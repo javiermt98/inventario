@@ -7,6 +7,7 @@ using SQLiteNetExtensions.Exceptions;
 
 using SQLite;
 using SQLiteNetExtensionsAsync.Extensions;
+
 namespace Proyecto_Inventario_JavierMT.Dao
 {
     public class DaoImpresoras

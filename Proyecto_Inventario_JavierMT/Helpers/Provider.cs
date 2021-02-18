@@ -42,6 +42,28 @@ namespace Proyecto_Inventario_JavierMT.Helpers
             }
         }
 
+        private static DaoMonitores _daoMonitores;
+
+        public static DaoMonitores daoMonitores
+        {
+            get
+            {
+                if (_daoMonitores == null) _daoMonitores = new DaoMonitores(DataBase_Inventario.ConectionDatabase);
+                return _daoMonitores;
+            }
+        }
+
+        private static DaoRouters _daoRouters;
+
+        public static DaoRouters daoRouters
+        {
+            get
+            {
+                if (_daoRouters == null) _daoRouters = new DaoRouters(DataBase_Inventario.ConectionDatabase);
+                return _daoRouters;
+            }
+        }
+
         public static List<String> listatipos { get; set; } = new List<String> { "Sobremesa", "Portatil" };
         public static List<String> listafuncion { get; set; } = new List<String> { "Servidor de Aula", "Cliente" };
         public static List<String> listasistop { get; set; } = new List<String> 

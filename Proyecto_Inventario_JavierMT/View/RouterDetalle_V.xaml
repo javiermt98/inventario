@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_Inventario_JavierMT.View.RouterDetalle_V">
+    <StackLayout Margin="20" Padding="15">
+
+        <Label Text="Nombre" />
+        <Entry x:Name="nombre" Placeholder="Nombre del dispositivo" Text="{Binding disp.nombre}"/>
+        <Label Text="Número de Factura" />
+        <Entry x:Name="factura" Placeholder="Número de Factura del dispositivo" Text="{Binding disp.num_factura}" />
+        <Label Text="Fecha de Compra "/>
+        <DatePicker x:Name="fechacompra" Margin="10" Date="{Binding disp.fecha_factura}" />
+        <Label x:Name="descripcion" Text="Descripción"/>
+        <Entry Placeholder="Descripción del dispositivo" HeightRequest="100" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" Text="{Binding disp.descripcion}" />
+        <Label Text="Numero de puertos"/>
+        <Entry Placeholder="Numero de puertos" Text="{Binding routerseleccionado.num_puertos}"/>
+        <Label Text="Velocidad de Red"/>
+        <Entry Placeholder="Velocidad de Red (Gbps)" Text="{Binding routerseleccionado.velocidad}"/>
+        <Label Text="Wifi"/>
+        <CheckBox Color="Blue" IsChecked="False" x:Name="wifi"/>
+
+
+        <Button Text="Guardar Monitor" Clicked="Guardar" Margin="20" Padding="5" BackgroundColor="Blue" TextColor="White"/>
+
+
+    </StackLayout>
+</ContentPage>

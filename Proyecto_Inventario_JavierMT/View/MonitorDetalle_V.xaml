@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Proyecto_Inventario_JavierMT.View.ImpresoraDetalle_V">
+             x:Class="Proyecto_Inventario_JavierMT.View.MonitorDetalle_V">
     <ContentPage.Content>
 
         <StackLayout Margin="20" Padding="15">
@@ -14,17 +14,13 @@
             <DatePicker x:Name="fechacompra" Margin="10" Date="{Binding disp.fecha_factura}" />
             <Label x:Name="descripcion" Text="Descripción"/>
             <Entry Placeholder="Descripción del dispositivo" HeightRequest="100" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" Text="{Binding disp.descripcion}" />
-            <Picker x:Name="tipo"
-                Title="Tipo"
-                TitleColor="Black"                
-                ItemsSource="{Binding listatiposimpresoras}" 
-               />
-            <Label Text="Escaner"/>
-            <CheckBox IsChecked="False" Color="Blue" x:Name="escaner"/>
-            <Label Text="Color"/>
-            <CheckBox IsChecked="False" Color="Blue" x:Name="color"/>
+            <Label Text="Pulgadas"/>
+            <Entry Placeholder="Pulgadas (inch)" Text="{Binding monitorseleccionado.pulgadas}"/>
+            <Label Text="Marca"/>
+            <Entry Placeholder="Maca" Text="{Binding monitorseleccionado.marca}"/>
 
-            <Button Text="Guardar Impresora" Clicked="Guardar" Margin="20" Padding="5" BackgroundColor="Blue" TextColor="White"/>
+
+            <Button Text="Guardar Monitor" Clicked="Guardar" Margin="20" Padding="5" BackgroundColor="Blue" TextColor="White"/>
 
 
         </StackLayout>

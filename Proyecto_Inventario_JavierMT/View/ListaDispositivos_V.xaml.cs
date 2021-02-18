@@ -23,6 +23,8 @@ namespace Proyecto_Inventario_JavierMT.View
             InitializeComponent();
             Children.Add(new ListaOrdenador_V());
             Children.Add(new ListaImpresoras_V());
+            Children.Add(new ListaMonitores_V());
+            Children.Add(new ListaRouters_V());
 
         }
 
