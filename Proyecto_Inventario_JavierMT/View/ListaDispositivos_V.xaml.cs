@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Proyecto_Inventario_JavierMT.Model;
 using Proyecto_Inventario_JavierMT.ViewModel;
 using Proyecto_Inventario_JavierMT.View;
-
+using Proyecto_Inventario_JavierMT.Helpers;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -20,11 +20,13 @@ namespace Proyecto_Inventario_JavierMT.View
         public ListaDispositivos_V()
         {
             vm = new ListaDispositivos_VM();
+           
             InitializeComponent();
             Children.Add(new ListaOrdenador_V());
             Children.Add(new ListaImpresoras_V());
             Children.Add(new ListaMonitores_V());
             Children.Add(new ListaRouters_V());
+            
 
         }
 

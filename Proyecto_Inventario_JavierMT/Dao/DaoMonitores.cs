@@ -21,15 +21,21 @@ namespace Proyecto_Inventario_JavierMT.Dao
         }
         internal List<Monitor_M> AllMonitoresAsync()
         {
-            List<Monitor_M> monRelleno = new List<Monitor_M>();
-            List<Monitor_M> monitores = this.connection.QueryAsync<Monitor_M>("Select m.* from Monitor m,Dispositivos d where m.Dispositivo = d.id_dispositivo and d.id_aula = " + Provider.auladeldispositivo.Id).Result;
-            foreach (Monitor_M m in monitores)
+            if (Provider.auladeldispositivo != null)
             {
-                Monitor_M mon = new Monitor_M();
-                mon = this.connection.GetWithChildrenAsync<Monitor_M>(m.id_monitor).Result;
-                monRelleno.Add(mon);
+                List<Monitor_M> monRelleno = new List<Monitor_M>();
+                List<Monitor_M> monitores = this.connection.QueryAsync<Monitor_M>("Select m.* from Monitor m,Dispositivos d where m.Dispositivo = d.id_dispositivo and d.id_aula = " + Provider.auladeldispositivo.Id).Result;
+                foreach (Monitor_M m in monitores)
+                {
+                    Monitor_M mon = new Monitor_M();
+                    mon = this.connection.GetWithChildrenAsync<Monitor_M>(m.id_monitor).Result;
+                    monRelleno.Add(mon);
+                }
+                return monRelleno;
             }
-            return monRelleno;
+            else {
+                return this.connection.GetAllWithChildrenAsync<Monitor_M>().Result;
+            }
         }
 
         public void InsertMonitor(Monitor_M monitor)

@@ -80,5 +80,10 @@ namespace Proyecto_Inventario_JavierMT.View
             vm.Recargar();
             base.OnAppearing();
         }
+
+        private void TextChange(object sender, TextChangedEventArgs e)
+        {
+            vm.TextFilter(searchbar.Text);
+        }
     }
 }

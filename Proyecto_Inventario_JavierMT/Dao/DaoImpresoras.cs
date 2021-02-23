@@ -22,15 +22,21 @@ namespace Proyecto_Inventario_JavierMT.Dao
         }
         internal List<Impresora_M> AllImpresorasAsync()
         {
-            List<Impresora_M> impRelleno = new List<Impresora_M>();
-            List<Impresora_M> impresoras = this.connection.QueryAsync<Impresora_M>("Select i.* from Impresora i,Dispositivos d where i.Dispositivo = d.id_dispositivo and d.id_aula = " + Provider.auladeldispositivo.Id).Result;
-            foreach (Impresora_M m in impresoras)
+            if (Provider.auladeldispositivo != null)
             {
-                Impresora_M mon = new Impresora_M();
-                mon = this.connection.GetWithChildrenAsync<Impresora_M>(m.id_impresora).Result;
-                impRelleno.Add(mon);
+                List<Impresora_M> impRelleno = new List<Impresora_M>();
+                List<Impresora_M> impresoras = this.connection.QueryAsync<Impresora_M>("Select i.* from Impresora i,Dispositivos d where i.Dispositivo = d.id_dispositivo and d.id_aula = " + Provider.auladeldispositivo.Id).Result;
+                foreach (Impresora_M m in impresoras)
+                {
+                    Impresora_M mon = new Impresora_M();
+                    mon = this.connection.GetWithChildrenAsync<Impresora_M>(m.id_impresora).Result;
+                    impRelleno.Add(mon);
+                }
+                return impRelleno;
             }
-            return impRelleno;
+            else {
+                return this.connection.GetAllWithChildrenAsync<Impresora_M>().Result;
+            }
 
 
         }

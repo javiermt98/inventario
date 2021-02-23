@@ -21,15 +21,22 @@ namespace Proyecto_Inventario_JavierMT.Dao
         }
         internal List<Ordenador_M> AllOrdenadoresAsync()
         {
-            List<Ordenador_M> ordRelleno = new List<Ordenador_M>();
-            List<Ordenador_M> ordenadores = this.connection.QueryAsync<Ordenador_M>("Select o.* from Ordenador o,Dispositivos d where o.Dispositivo = d.id_dispositivo and d.id_aula = " + Provider.auladeldispositivo.Id).Result;
-            foreach (Ordenador_M ord in ordenadores)
+            if (Provider.auladeldispositivo != null)
             {
-                Ordenador_M pc = new Ordenador_M();
-                pc = this.connection.GetWithChildrenAsync<Ordenador_M>(ord.id_ordenador).Result;
-                ordRelleno.Add(pc);
+
+                List<Ordenador_M> ordRelleno = new List<Ordenador_M>();
+                List<Ordenador_M> ordenadores = this.connection.QueryAsync<Ordenador_M>("Select o.* from Ordenador o,Dispositivos d where o.Dispositivo = d.id_dispositivo and d.id_aula = " + Provider.auladeldispositivo.Id).Result;
+                foreach (Ordenador_M ord in ordenadores)
+                {
+                    Ordenador_M pc = new Ordenador_M();
+                    pc = this.connection.GetWithChildrenAsync<Ordenador_M>(ord.id_ordenador).Result;
+                    ordRelleno.Add(pc);
+                }
+                return ordRelleno;
             }
-            return ordRelleno;
+            else {
+                return this.connection.GetAllWithChildrenAsync<Ordenador_M>().Result;
+            }
         }
 
         public void InsertOrdenadores(Ordenador_M ordenador)

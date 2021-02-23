@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Bp7D2GvNmvOOasVik1X2EcbvDo/Vt9y2Z5X0sQ8NO7z324AmiDkSfGLJpmwRIQdVe/Bk75J0apWURnoxvAOthg==",
+  "dgSpecHash": "UwiH5+8vNylQhbf7APMgg4amRQfCjENDf3DUhkA5HP3zI6dI3acDvtldvRSfwcn39XNgvS7AmU0KiPACOFHLqw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.Android\\Proyecto_Inventario_JavierMT.Android.csproj",
+  "projectFilePath": "C:\\Users\\javie\\Desktop\\inventario\\Proyecto_Inventario_JavierMT.Android\\Proyecto_Inventario_JavierMT.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\javie\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
     "C:\\Users\\javie\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",

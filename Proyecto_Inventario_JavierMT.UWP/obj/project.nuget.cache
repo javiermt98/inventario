@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "srCuDUoqkK3CfJCAf1k0BH+oqyVrfXUEP1L7tIfVsXxhRNelp0SJNLjTJYa3iTjJW3yp9BdCnJee6UG8kHJAOg==",
+  "dgSpecHash": "lFATan9VaKk+2G7+9A2FcZeYb4+suwHzvQn2/sqXUQ8xrp3IQGf8ajQot3RTATLNPBl/s2gIS5+bFxbRPSsdrg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.UWP\\Proyecto_Inventario_JavierMT.UWP.csproj",
+  "projectFilePath": "C:\\Users\\javie\\Desktop\\inventario\\Proyecto_Inventario_JavierMT.UWP\\Proyecto_Inventario_JavierMT.UWP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\javie\\.nuget\\packages\\microsoft.net.native.compiler\\2.2.9-rel-29512-01\\microsoft.net.native.compiler.2.2.9-rel-29512-01.nupkg.sha512",
     "C:\\Users\\javie\\.nuget\\packages\\microsoft.net.uwpcoreruntimesdk\\2.2.11\\microsoft.net.uwpcoreruntimesdk.2.2.11.nupkg.sha512",

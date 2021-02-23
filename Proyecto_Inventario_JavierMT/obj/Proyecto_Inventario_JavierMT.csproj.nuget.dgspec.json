@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj": {}
+    "C:\\Users\\javie\\Desktop\\inventario\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj": {
+    "C:\\Users\\javie\\Desktop\\inventario\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj",
+        "projectUniqueName": "C:\\Users\\javie\\Desktop\\inventario\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj",
         "projectName": "Proyecto_Inventario_JavierMT",
-        "projectPath": "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj",
+        "projectPath": "C:\\Users\\javie\\Desktop\\inventario\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj",
         "packagesPath": "C:\\Users\\javie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\javie\\Desktop\\JAVIERDAM\\DAM\\2DAM\\PM\\2Ev\\Workspace_VisualStudio_PM_2Ev\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT\\obj\\",
+        "outputPath": "C:\\Users\\javie\\Desktop\\inventario\\Proyecto_Inventario_JavierMT\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

@@ -22,6 +22,7 @@ namespace Proyecto_Inventario_JavierMT.Dao
         public Task<List<Aula_M>> AllAulasAsync() {
 
             return this.connection.Table<Aula_M>().ToListAsync();
+
         }
 
         public void Insert(Aula_M aula)
@@ -47,6 +48,9 @@ namespace Proyecto_Inventario_JavierMT.Dao
             
         }
 
-       
+        internal Task<List<Aula_M>> Ordenar(string text)
+        {
+           return this.connection.QueryAsync<Aula_M>("SELECT * FROM Aula where LOWER(nombre) LIKE '%"+text.ToLower()+"%'");
+        }
     }
     }

@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ec0cc741-fd3e-485c-81be-68815c480690</PackageIdentityName>
     <PackageIdentityPublisher>CN=86493694-9b0f-4f5d-bd45-a96c3cf776fa</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>99FD21A160D2C01EB8AE12143E31F104C488E6A844F91EA0BA58258BE1183F72</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>a589d61c-5f12-4488-b944-d4cc2cc81dc8_1.0.0.0_x86__56bhnv6a4e56w</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>a589d61c-5f12-4488-b944-d4cc2cc81dc8_56bhnv6a4e56w!App</RegisteredUserModeAppID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-02-18T21:12:53.007</Modified>
+      <Modified>2021-02-23T20:09:28.840</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\Proyecto_Inventario_JavierMT.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\Proyecto_Inventario_JavierMT.UWP.exe">
       <PackagePath>entrypoint\Proyecto_Inventario_JavierMT.UWP.exe</PackagePath>
-      <Modified>2021-02-18T21:12:52.228</Modified>
+      <Modified>2021-02-23T20:09:28.064</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\javie\.nuget\packages\newtonsoft.json\9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -106,9 +106,9 @@
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
       <Modified>2021-01-15T18:16:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT\bin\Debug\netstandard2.0\Proyecto_Inventario_JavierMT.dll">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT\bin\Debug\netstandard2.0\Proyecto_Inventario_JavierMT.dll">
       <PackagePath>Proyecto_Inventario_JavierMT.dll</PackagePath>
-      <Modified>2021-02-18T21:53:25.528</Modified>
+      <Modified>2021-02-23T20:32:26.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\javie\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -122,180 +122,184 @@
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
       <Modified>2021-01-15T18:11:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\borrar.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\borrar.png">
       <PackagePath>Assets\borrar.png</PackagePath>
-      <Modified>2021-01-25T19:57:50.358</Modified>
+      <Modified>2021-02-23T16:59:46.527</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\carpeta.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\carpeta.png">
       <PackagePath>Assets\carpeta.png</PackagePath>
-      <Modified>2021-01-25T17:15:34.193</Modified>
+      <Modified>2021-02-23T16:59:46.527</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\edit.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\edit.png">
       <PackagePath>Assets\edit.png</PackagePath>
-      <Modified>2021-01-27T20:00:44.286</Modified>
+      <Modified>2021-02-23T16:59:46.528</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\inspeccionar.png">
+      <PackagePath>Assets\inspeccionar.png</PackagePath>
+      <Modified>2021-02-23T17:35:36.953</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.750</Modified>
+      <Modified>2021-02-23T16:59:46.520</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.752</Modified>
+      <Modified>2021-02-23T16:59:46.520</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.757</Modified>
+      <Modified>2021-02-23T16:59:46.520</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\plus.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\plus.png">
       <PackagePath>Assets\plus.png</PackagePath>
-      <Modified>2021-01-25T19:57:50.360</Modified>
+      <Modified>2021-02-23T16:59:46.528</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\room.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\room.png">
       <PackagePath>Assets\room.png</PackagePath>
-      <Modified>2021-01-25T17:15:34.191</Modified>
+      <Modified>2021-02-23T16:59:46.528</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.758</Modified>
+      <Modified>2021-02-23T16:59:46.521</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.815</Modified>
+      <Modified>2021-02-23T16:59:46.521</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.816</Modified>
+      <Modified>2021-02-23T16:59:46.521</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\sort.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\sort.png">
       <PackagePath>Assets\sort.png</PackagePath>
-      <Modified>2021-01-25T19:57:50.356</Modified>
+      <Modified>2021-02-23T16:59:46.528</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.817</Modified>
+      <Modified>2021-02-23T16:59:46.521</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.819</Modified>
+      <Modified>2021-02-23T16:59:46.522</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.856</Modified>
+      <Modified>2021-02-23T16:59:46.522</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.858</Modified>
+      <Modified>2021-02-23T16:59:46.522</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.859</Modified>
+      <Modified>2021-02-23T16:59:46.523</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.863</Modified>
+      <Modified>2021-02-23T16:59:46.523</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.864</Modified>
+      <Modified>2021-02-23T16:59:46.523</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.900</Modified>
+      <Modified>2021-02-23T16:59:46.523</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.901</Modified>
+      <Modified>2021-02-23T16:59:46.524</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.903</Modified>
+      <Modified>2021-02-23T16:59:46.524</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.904</Modified>
+      <Modified>2021-02-23T16:59:46.524</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.905</Modified>
+      <Modified>2021-02-23T16:59:46.524</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.942</Modified>
+      <Modified>2021-02-23T16:59:46.525</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.943</Modified>
+      <Modified>2021-02-23T16:59:46.525</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.944</Modified>
+      <Modified>2021-02-23T16:59:46.525</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.948</Modified>
+      <Modified>2021-02-23T16:59:46.526</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.949</Modified>
+      <Modified>2021-02-23T16:59:46.526</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.986</Modified>
+      <Modified>2021-02-23T16:59:46.526</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.987</Modified>
+      <Modified>2021-02-23T16:59:46.526</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.988</Modified>
+      <Modified>2021-02-23T16:59:46.527</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T15:03:13.989</Modified>
+      <Modified>2021-02-23T16:59:46.527</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2021-01-25T15:03:13.991</Modified>
+      <Modified>2021-02-23T16:59:46.530</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\Proyecto_Inventario_JavierMT.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\Proyecto_Inventario_JavierMT.UWP.xr.xml">
       <PackagePath>Proyecto_Inventario_JavierMT.UWP.xr.xml</PackagePath>
-      <Modified>2021-01-25T17:22:01.289</Modified>
+      <Modified>2021-02-23T16:59:46.675</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-02-18T21:12:52.132</Modified>
+      <Modified>2021-02-23T20:09:27.970</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-02-18T21:12:52.132</Modified>
+      <Modified>2021-02-23T20:09:27.970</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -309,13 +313,13 @@
       <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
       <Modified>2020-07-09T22:07:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-02-18T18:04:26.965</Modified>
+      <Modified>2021-02-23T17:37:27.874</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Desktop\JAVIERDAM\DAM\2DAM\PM\2Ev\Workspace_VisualStudio_PM_2Ev\Proyecto_Inventario_JavierMT\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\Core\Proyecto_Inventario_JavierMT.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\bin\x86\Debug\Core\Proyecto_Inventario_JavierMT.UWP.exe">
       <PackagePath>Proyecto_Inventario_JavierMT.UWP.exe</PackagePath>
-      <Modified>2021-02-18T21:12:53.003</Modified>
+      <Modified>2021-02-23T20:09:28.836</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

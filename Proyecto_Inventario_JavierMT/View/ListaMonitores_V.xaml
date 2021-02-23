@@ -44,7 +44,7 @@
                                         <Entry Text="{Binding marca}" Grid.Column="1" Grid.Row="2" IsReadOnly="True" />
                                         <ImageButton Source="{OnPlatform UWP='Assets/borrar.png', Android='borrar.png'}" Grid.Row="1" Grid.Column="3"
                                         Clicked="Borrar"  Grid.RowSpan="2" IsVisible="{Binding activada}"/>
-                                        <ImageButton Source="{OnPlatform UWP='Assets/edit.png', Android='edit.png'}" Grid.Row="1" Grid.Column="4"
+                                        <ImageButton Source="{OnPlatform UWP='Assets/inspeccionar.png', Android='inspeccionar.png'}" Grid.Row="1" Grid.Column="4"
                                         Clicked="Editar"  Grid.RowSpan="2" IsVisible="{Binding activada}"/>
                                     </Grid>
                                 </ViewCell>

@@ -26,7 +26,7 @@ namespace Proyecto_Inventario_JavierMT.View
 
         private void Dispositivos(object sender, EventArgs e)
         {
-            
+            Navigation.PushAsync(new ListaDispositivos_V());
         }
     }
 }
