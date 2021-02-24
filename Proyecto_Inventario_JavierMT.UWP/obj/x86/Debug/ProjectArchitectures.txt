@@ -1,1 +1,1 @@
-C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Proyecto_Inventario_JavierMT.UWP.csproj;x86
+C:\Users\lliurex\Desktop\inventario\Proyecto_Inventario_JavierMT.UWP\Proyecto_Inventario_JavierMT.UWP.csproj;x86

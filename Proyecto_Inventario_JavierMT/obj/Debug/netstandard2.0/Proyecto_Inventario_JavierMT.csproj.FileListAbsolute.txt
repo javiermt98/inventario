@@ -86,3 +86,9 @@ C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT\obj\Debug\netstan
 C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT\obj\Debug\netstandard2.0\Proyecto_Inventario_JavierMT.dll
 C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT\obj\Debug\netstandard2.0\ref\Proyecto_Inventario_JavierMT.dll
 C:\Users\javie\Desktop\inventario\Proyecto_Inventario_JavierMT\obj\Debug\netstandard2.0\Proyecto_Inventario_JavierMT.pdb
+C:\Users\lliurex\Desktop\inventario\Proyecto_Inventario_JavierMT\obj\Debug\netstandard2.0\View\ImpresoraDetalle_V.xaml.g.cs
+C:\Users\lliurex\Desktop\inventario\Proyecto_Inventario_JavierMT\obj\Debug\netstandard2.0\View\ListaImpresoras_V.xaml.g.cs
+C:\Users\lliurex\Desktop\inventario\Proyecto_Inventario_JavierMT\obj\Debug\netstandard2.0\View\ListaMonitores_V.xaml.g.cs
+C:\Users\lliurex\Desktop\inventario\Proyecto_Inventario_JavierMT\obj\Debug\netstandard2.0\View\ListaRouters_V.xaml.g.cs
+C:\Users\lliurex\Desktop\inventario\Proyecto_Inventario_JavierMT\obj\Debug\netstandard2.0\View\MonitorDetalle_V.xaml.g.cs
+C:\Users\lliurex\Desktop\inventario\Proyecto_Inventario_JavierMT\obj\Debug\netstandard2.0\View\RouterDetalle_V.xaml.g.cs

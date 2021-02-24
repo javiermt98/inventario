@@ -2526,24 +2526,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\javie\\.nuget\\packages\\": {},
+    "C:\\Users\\lliurex\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\javie\\Desktop\\inventario\\Proyecto_Inventario_JavierMT.Android\\Proyecto_Inventario_JavierMT.Android.csproj",
+      "projectUniqueName": "C:\\Users\\lliurex\\Desktop\\inventario\\Proyecto_Inventario_JavierMT.Android\\Proyecto_Inventario_JavierMT.Android.csproj",
       "projectName": "Proyecto_Inventario_JavierMT.Android",
-      "projectPath": "C:\\Users\\javie\\Desktop\\inventario\\Proyecto_Inventario_JavierMT.Android\\Proyecto_Inventario_JavierMT.Android.csproj",
-      "packagesPath": "C:\\Users\\javie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\javie\\Desktop\\inventario\\Proyecto_Inventario_JavierMT.Android\\obj\\",
+      "projectPath": "C:\\Users\\lliurex\\Desktop\\inventario\\Proyecto_Inventario_JavierMT.Android\\Proyecto_Inventario_JavierMT.Android.csproj",
+      "packagesPath": "C:\\Users\\lliurex\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lliurex\\Desktop\\inventario\\Proyecto_Inventario_JavierMT.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\javie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lliurex\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2557,8 +2557,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\javie\\Desktop\\inventario\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj": {
-              "projectPath": "C:\\Users\\javie\\Desktop\\inventario\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj"
+            "C:\\Users\\lliurex\\Desktop\\inventario\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj": {
+              "projectPath": "C:\\Users\\lliurex\\Desktop\\inventario\\Proyecto_Inventario_JavierMT\\Proyecto_Inventario_JavierMT.csproj"
             }
           }
         }

@@ -50,7 +50,7 @@ namespace Proyecto_Inventario_JavierMT.Dao
             }
             else
             {
-                this.connection.UpdateWithChildrenAsync(ordenador);
+                this.connection.UpdateWithChildrenAsync(ordenador.dispositivo);
             }
         }
         public void Borrar(Ordenador_M ordenador)
