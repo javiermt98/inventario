@@ -24,11 +24,12 @@ namespace Proyecto_Inventario_JavierMT.View
             InitializeComponent();
             vm = new ListaAulas_VM();
             BindingContext = vm;
+            
 
 
         }
 
-        async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
+        void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             if (e.Item == null)
                 return;
@@ -65,7 +66,7 @@ namespace Proyecto_Inventario_JavierMT.View
 
         private void Sort(object sender, EventArgs e)
         {
-
+            vm.Ordenar();
         }
 
         private void Editar(object sender, EventArgs e)
@@ -79,6 +80,7 @@ namespace Proyecto_Inventario_JavierMT.View
         {
             vm.Recargar();
             base.OnAppearing();
+            Provider.auladeldispositivo = null;
         }
 
         private void TextChange(object sender, TextChangedEventArgs e)

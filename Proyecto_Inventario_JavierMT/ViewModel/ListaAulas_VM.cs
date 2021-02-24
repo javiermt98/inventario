@@ -44,8 +44,15 @@ namespace Proyecto_Inventario_JavierMT.ViewModel
 
         internal void TextFilter(string text)
         {
-            Task<List<Aula_M>> TaskAulas = Provider.daoAulas.Ordenar(text);
+            Task<List<Aula_M>> TaskAulas = Provider.daoAulas.BuscarAulasAsync(text);
             aulaslist = new ObservableCollection<Aula_M>(TaskAulas.Result);
+        }
+
+        internal void Ordenar()
+        {
+            Task<List<Aula_M>> TaskAulas = Provider.daoAulas.SortAulasAsync();
+            aulaslist = new ObservableCollection<Aula_M>(TaskAulas.Result);
+            OnPropertyChanged("aulaslist");
         }
     }
 }
