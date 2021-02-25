@@ -108,7 +108,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lliurex\Desktop\inventario\Proyecto_Inventario_JavierMT\bin\Debug\netstandard2.0\Proyecto_Inventario_JavierMT.dll">
       <PackagePath>Proyecto_Inventario_JavierMT.dll</PackagePath>
-      <Modified>2021-02-24T12:38:24.208</Modified>
+      <Modified>2021-02-25T11:44:42.456</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>

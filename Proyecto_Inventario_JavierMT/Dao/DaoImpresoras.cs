@@ -55,6 +55,8 @@ namespace Proyecto_Inventario_JavierMT.Dao
             else
             {
                 this.connection.UpdateWithChildrenAsync(impresora.dispositivo);
+                this.connection.UpdateWithChildrenAsync(impresora);
+
             }
         }
         public void Borrar(Impresora_M impresora)

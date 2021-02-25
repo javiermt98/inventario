@@ -50,6 +50,8 @@ namespace Proyecto_Inventario_JavierMT.Dao
             else
             {
                 this.connection.UpdateWithChildrenAsync(monitor.dispositivo);
+                this.connection.UpdateWithChildrenAsync(monitor);
+
             }
         }
         public void Borrar(Monitor_M monitor)

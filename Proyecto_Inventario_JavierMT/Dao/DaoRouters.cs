@@ -51,6 +51,8 @@ namespace Proyecto_Inventario_JavierMT.Dao
             else
             {
                 this.connection.UpdateWithChildrenAsync(router.dispositivo);
+                this.connection.UpdateWithChildrenAsync(router);
+
             }
         }
         public void Borrar(Router_M router)
